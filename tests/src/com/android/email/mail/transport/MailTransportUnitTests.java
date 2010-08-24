@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.transport;
+package com.mwebster.email.mail.transport;
 
-import com.android.email.mail.transport.MailTransport;
+import com.mwebster.email.mail.transport.MailTransport;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;

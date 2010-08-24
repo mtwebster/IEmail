@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.email.activity;
 
-import com.android.email.Email;
-import com.android.email.MessagingController;
-import com.android.email.R;
-import com.android.email.mail.internet.BinaryTempFileBody;
+import com.mwebster.email.Email;
+import com.mwebster.email.MessagingController;
+import com.mwebster.email.R;
+import com.mwebster.email.mail.internet.BinaryTempFileBody;
 
 import android.app.Application;
 import android.content.Context;
@@ -49,8 +49,8 @@ public class MessageViewTests
         extends ActivityInstrumentationTestCase2<MessageView> {
     
     // copied from MessageView (could be package class)
-    private static final String EXTRA_MESSAGE_ID = "com.android.email.MessageView_message_id";
-    private static final String EXTRA_MAILBOX_ID = "com.android.email.MessageView_mailbox_id";
+    private static final String EXTRA_MESSAGE_ID = "com.mwebster.email.MessageView_message_id";
+    private static final String EXTRA_MAILBOX_ID = "com.mwebster.email.MessageView_mailbox_id";
 
     private TextView mToView;
     private TextView mSubjectView;

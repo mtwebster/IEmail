@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.email.activity;
 
-import com.android.email.Email;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Message;
-import com.android.email.provider.EmailContent.MessageColumns;
+import com.mwebster.email.Email;
+import com.mwebster.email.provider.EmailContent;
+import com.mwebster.email.provider.EmailContent.Message;
+import com.mwebster.email.provider.EmailContent.MessageColumns;
 
 import android.content.Context;
 import android.content.Intent;
@@ -45,11 +45,11 @@ import java.util.Set;
 public class MessageListUnitTests
         extends ActivityInstrumentationTestCase2<MessageList> {
 
-    private static final String EXTRA_ACCOUNT_ID = "com.android.email.activity._ACCOUNT_ID";
-    private static final String EXTRA_MAILBOX_TYPE = "com.android.email.activity.MAILBOX_TYPE";
-    private static final String EXTRA_MAILBOX_ID = "com.android.email.activity.MAILBOX_ID";
+    private static final String EXTRA_ACCOUNT_ID = "com.mwebster.email.activity._ACCOUNT_ID";
+    private static final String EXTRA_MAILBOX_TYPE = "com.mwebster.email.activity.MAILBOX_TYPE";
+    private static final String EXTRA_MAILBOX_ID = "com.mwebster.email.activity.MAILBOX_ID";
     private static final String STATE_CHECKED_ITEMS =
-        "com.android.email.activity.MessageList.checkedItems";
+        "com.mwebster.email.activity.MessageList.checkedItems";
     private Context mContext;
     private MessageList mMessageList;
     private CursorAdapter mListAdapter;

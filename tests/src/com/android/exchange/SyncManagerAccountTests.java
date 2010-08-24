@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
-import com.android.email.AccountTestCase;
-import com.android.email.Email;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.exchange.SyncManager.SyncError;
+import com.mwebster.email.AccountTestCase;
+import com.mwebster.email.Email;
+import com.mwebster.email.provider.EmailContent;
+import com.mwebster.email.provider.EmailProvider;
+import com.mwebster.email.provider.ProviderTestUtils;
+import com.mwebster.email.provider.EmailContent.Account;
+import com.mwebster.email.provider.EmailContent.Mailbox;
+import com.mwebster.exchange.SyncManager.SyncError;
 
 import android.accounts.AccountManager;
 import android.content.ContentResolver;
@@ -35,7 +35,7 @@ import java.util.HashMap;
 
 /**
  * You can run this entire test case with:
- *   runtest -c com.android.exchange.SyncManagerAccountTests email
+ *   runtest -c com.mwebster.exchange.SyncManagerAccountTests email
  */
 public class SyncManagerAccountTests extends AccountTestCase {
 

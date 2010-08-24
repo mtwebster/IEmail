@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.internet;
+package com.mwebster.email.mail.internet;
 
-import com.android.email.mail.Message;
-import com.android.email.mail.MessageTestUtils;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.MessageTestUtils.MessageBuilder;
-import com.android.email.mail.MessageTestUtils.MultipartBuilder;
-import com.android.email.mail.MessageTestUtils.TextBuilder;
-import com.android.email.mail.store.LocalStore;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Account;
+import com.mwebster.email.mail.Message;
+import com.mwebster.email.mail.MessageTestUtils;
+import com.mwebster.email.mail.MessagingException;
+import com.mwebster.email.mail.MessageTestUtils.MessageBuilder;
+import com.mwebster.email.mail.MessageTestUtils.MultipartBuilder;
+import com.mwebster.email.mail.MessageTestUtils.TextBuilder;
+import com.mwebster.email.mail.store.LocalStore;
+import com.mwebster.email.provider.EmailContent;
+import com.mwebster.email.provider.EmailContent.Account;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -38,7 +38,7 @@ import java.io.IOException;
  * Tests of the Email HTML utils.
  * 
  * You can run this entire test case with:
- *   runtest -c com.android.email.mail.internet.EmailHtmlUtilTest email
+ *   runtest -c com.mwebster.email.mail.internet.EmailHtmlUtilTest email
  */
 @MediumTest
 public class EmailHtmlUtilTest extends AndroidTestCase {

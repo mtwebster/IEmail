@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.mwebster.email.mail;
 
-import com.android.email.Email;
+import com.mwebster.email.Email;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.MediumTest;

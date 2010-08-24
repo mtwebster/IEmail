@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.mwebster.email.mail.store;
 
-import com.android.email.Email;
-import com.android.email.mail.Address;
-import com.android.email.mail.Body;
-import com.android.email.mail.FetchProfile;
-import com.android.email.mail.Flag;
-import com.android.email.mail.Folder;
-import com.android.email.mail.Message;
-import com.android.email.mail.MessageTestUtils;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Part;
-import com.android.email.mail.Store;
-import com.android.email.mail.Folder.FolderType;
-import com.android.email.mail.Folder.OpenMode;
-import com.android.email.mail.Message.RecipientType;
-import com.android.email.mail.MessageTestUtils.MultipartBuilder;
-import com.android.email.mail.internet.BinaryTempFileBody;
-import com.android.email.mail.internet.MimeMessage;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.mail.internet.TextBody;
-import com.android.email.mail.store.LocalStore.LocalMessage;
+import com.mwebster.email.Email;
+import com.mwebster.email.mail.Address;
+import com.mwebster.email.mail.Body;
+import com.mwebster.email.mail.FetchProfile;
+import com.mwebster.email.mail.Flag;
+import com.mwebster.email.mail.Folder;
+import com.mwebster.email.mail.Message;
+import com.mwebster.email.mail.MessageTestUtils;
+import com.mwebster.email.mail.MessagingException;
+import com.mwebster.email.mail.Part;
+import com.mwebster.email.mail.Store;
+import com.mwebster.email.mail.Folder.FolderType;
+import com.mwebster.email.mail.Folder.OpenMode;
+import com.mwebster.email.mail.Message.RecipientType;
+import com.mwebster.email.mail.MessageTestUtils.MultipartBuilder;
+import com.mwebster.email.mail.internet.BinaryTempFileBody;
+import com.mwebster.email.mail.internet.MimeMessage;
+import com.mwebster.email.mail.internet.MimeUtility;
+import com.mwebster.email.mail.internet.TextBody;
+import com.mwebster.email.mail.store.LocalStore.LocalMessage;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -56,7 +56,7 @@ import java.util.HashSet;
 @MediumTest
 public class LocalStoreUnitTests extends AndroidTestCase {
     
-    public static final String DB_NAME = "com.android.email.mail.store.LocalStoreUnitTests.db";
+    public static final String DB_NAME = "com.mwebster.email.mail.store.LocalStoreUnitTests.db";
 
     private static final String SENDER = "sender@android.com";
     private static final String RECIPIENT_TO = "recipient-to@android.com";

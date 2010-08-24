@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
 import android.content.Context;
 import android.content.ContextWrapper;

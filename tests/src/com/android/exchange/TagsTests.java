@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
-import com.android.exchange.adapter.Tags;
+import com.mwebster.exchange.adapter.Tags;
 
 import android.test.AndroidTestCase;
 

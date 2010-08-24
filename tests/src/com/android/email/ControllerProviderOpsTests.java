@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.email;
 
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.Message;
+import com.mwebster.email.provider.EmailContent;
+import com.mwebster.email.provider.EmailProvider;
+import com.mwebster.email.provider.ProviderTestUtils;
+import com.mwebster.email.provider.EmailContent.Account;
+import com.mwebster.email.provider.EmailContent.Mailbox;
+import com.mwebster.email.provider.EmailContent.Message;
 
 import android.content.Context;
 import android.test.ProviderTestCase2;
@@ -36,7 +36,7 @@ import java.util.Locale;
  * a true "unit test".
  * 
  * You can run this entire test case with:
- *   runtest -c com.android.email.ControllerProviderOpsTests email
+ *   runtest -c com.mwebster.email.ControllerProviderOpsTests email
  */
 public class ControllerProviderOpsTests extends ProviderTestCase2<EmailProvider> {
 

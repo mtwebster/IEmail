@@ -14,33 +14,33 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.email;
 
-import com.android.email.mail.Address;
-import com.android.email.mail.Body;
-import com.android.email.mail.BodyPart;
-import com.android.email.mail.Flag;
-import com.android.email.mail.Folder;
-import com.android.email.mail.Message;
-import com.android.email.mail.MessageTestUtils;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Part;
-import com.android.email.mail.Folder.OpenMode;
-import com.android.email.mail.Message.RecipientType;
-import com.android.email.mail.MessageTestUtils.MessageBuilder;
-import com.android.email.mail.MessageTestUtils.MultipartBuilder;
-import com.android.email.mail.internet.MimeBodyPart;
-import com.android.email.mail.internet.MimeHeader;
-import com.android.email.mail.internet.MimeMessage;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.mail.internet.TextBody;
-import com.android.email.mail.store.LocalStore;
-import com.android.email.mail.store.LocalStoreUnitTests;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.Mailbox;
+import com.mwebster.email.mail.Address;
+import com.mwebster.email.mail.Body;
+import com.mwebster.email.mail.BodyPart;
+import com.mwebster.email.mail.Flag;
+import com.mwebster.email.mail.Folder;
+import com.mwebster.email.mail.Message;
+import com.mwebster.email.mail.MessageTestUtils;
+import com.mwebster.email.mail.MessagingException;
+import com.mwebster.email.mail.Part;
+import com.mwebster.email.mail.Folder.OpenMode;
+import com.mwebster.email.mail.Message.RecipientType;
+import com.mwebster.email.mail.MessageTestUtils.MessageBuilder;
+import com.mwebster.email.mail.MessageTestUtils.MultipartBuilder;
+import com.mwebster.email.mail.internet.MimeBodyPart;
+import com.mwebster.email.mail.internet.MimeHeader;
+import com.mwebster.email.mail.internet.MimeMessage;
+import com.mwebster.email.mail.internet.MimeUtility;
+import com.mwebster.email.mail.internet.TextBody;
+import com.mwebster.email.mail.store.LocalStore;
+import com.mwebster.email.mail.store.LocalStoreUnitTests;
+import com.mwebster.email.provider.EmailContent;
+import com.mwebster.email.provider.EmailProvider;
+import com.mwebster.email.provider.ProviderTestUtils;
+import com.mwebster.email.provider.EmailContent.Attachment;
+import com.mwebster.email.provider.EmailContent.Mailbox;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -60,7 +60,7 @@ import java.util.Date;
  * a true "unit test".
  * 
  * You can run this entire test case with:
- *   runtest -c com.android.email.LegacyConversionsTests email
+ *   runtest -c com.mwebster.email.LegacyConversionsTests email
  */
 public class LegacyConversionsTests extends ProviderTestCase2<EmailProvider> {
 

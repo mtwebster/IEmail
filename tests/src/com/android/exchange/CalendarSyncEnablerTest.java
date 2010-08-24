@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
-import com.android.email.AccountTestCase;
-import com.android.email.Email;
-import com.android.email.service.MailService;
+import com.mwebster.email.AccountTestCase;
+import com.mwebster.email.Email;
+import com.mwebster.email.service.MailService;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;

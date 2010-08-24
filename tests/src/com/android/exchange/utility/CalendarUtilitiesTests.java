@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.exchange.utility;
+package com.mwebster.exchange.utility;
 
-import com.android.email.R;
-import com.android.email.Utility;
-import com.android.email.mail.Address;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.Message;
+import com.mwebster.email.R;
+import com.mwebster.email.Utility;
+import com.mwebster.email.mail.Address;
+import com.mwebster.email.provider.EmailContent.Account;
+import com.mwebster.email.provider.EmailContent.Attachment;
+import com.mwebster.email.provider.EmailContent.Message;
 
 import android.content.ContentValues;
 import android.content.Entity;
@@ -45,7 +45,7 @@ import java.util.TimeZone;
 /**
  * Tests of EAS Calendar Utilities
  * You can run this entire test case with:
- *   runtest -c com.android.exchange.utility.CalendarUtilitiesTests email
+ *   runtest -c com.mwebster.exchange.utility.CalendarUtilitiesTests email
  *
  * Please see RFC2445 for RRULE definition
  * http://www.ietf.org/rfc/rfc2445.txt

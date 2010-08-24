@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.exchange.adapter.CalendarSyncAdapter.EasCalendarSyncParser;
+import com.mwebster.exchange.adapter.CalendarSyncAdapter.EasCalendarSyncParser;
 
 import android.content.ContentValues;
 import android.provider.Calendar.Events;
@@ -27,7 +27,7 @@ import java.util.TimeZone;
 
 /**
  * You can run this entire test case with:
- *   runtest -c com.android.exchange.adapter.CalendarSyncAdapterTests email
+ *   runtest -c com.mwebster.exchange.adapter.CalendarSyncAdapterTests email
  */
 
 public class CalendarSyncAdapterTests extends SyncAdapterTestCase<CalendarSyncAdapter> {

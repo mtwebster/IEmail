@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.mwebster.email.activity.setup;
 
-import com.android.email.R;
-import com.android.email.mail.Store;
-import com.android.email.provider.EmailContent;
+import com.mwebster.email.R;
+import com.mwebster.email.mail.Store;
+import com.mwebster.email.provider.EmailContent;
 
 import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;

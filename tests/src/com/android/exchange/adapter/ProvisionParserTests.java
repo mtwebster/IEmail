@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.email.SecurityPolicy.PolicySet;
+import com.mwebster.email.SecurityPolicy.PolicySet;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 
 /**
  * You can run this entire test case with:
- *   runtest -c com.android.exchange.adapter.ProvisionParserTests email
+ *   runtest -c com.mwebster.exchange.adapter.ProvisionParserTests email
  */
 public class ProvisionParserTests extends SyncAdapterTestCase {
     private final ByteArrayInputStream mTestInputStream =

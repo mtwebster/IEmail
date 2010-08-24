@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.internet;
+package com.mwebster.email.mail.internet;
 
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.internet.MimeBodyPart;
-import com.android.email.mail.internet.MimeHeader;
+import com.mwebster.email.mail.MessagingException;
+import com.mwebster.email.mail.internet.MimeBodyPart;
+import com.mwebster.email.mail.internet.MimeHeader;
 
 import junit.framework.TestCase;
 

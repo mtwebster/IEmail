@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.mwebster.email.mail;
 
-import com.android.email.mail.internet.BinaryTempFileBody;
-import com.android.email.mail.internet.MimeBodyPart;
-import com.android.email.mail.internet.MimeHeader;
-import com.android.email.mail.internet.MimeMessage;
-import com.android.email.mail.internet.MimeMultipart;
-import com.android.email.mail.internet.TextBody;
-import com.android.email.mail.store.LocalStore;
-import com.android.email.provider.AttachmentProvider;
-import com.android.email.provider.EmailContent;
+import com.mwebster.email.mail.internet.BinaryTempFileBody;
+import com.mwebster.email.mail.internet.MimeBodyPart;
+import com.mwebster.email.mail.internet.MimeHeader;
+import com.mwebster.email.mail.internet.MimeMessage;
+import com.mwebster.email.mail.internet.MimeMultipart;
+import com.mwebster.email.mail.internet.TextBody;
+import com.mwebster.email.mail.store.LocalStore;
+import com.mwebster.email.provider.AttachmentProvider;
+import com.mwebster.email.provider.EmailContent;
 
 import android.net.Uri;
 
