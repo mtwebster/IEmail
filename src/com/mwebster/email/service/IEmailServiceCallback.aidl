@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.mwebster.email.service;
 
 oneway interface IEmailServiceCallback {
     /*

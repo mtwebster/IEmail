@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.mwebster.email.provider;
 
 parcelable EmailContent.HostAuth;
 

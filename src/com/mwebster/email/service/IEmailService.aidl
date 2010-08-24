@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.email.service;
+package com.mwebster.email.service;
 
-import com.android.email.service.IEmailServiceCallback;
+import com.mwebster.email.service.IEmailServiceCallback;
 import android.os.Bundle;
 
 interface IEmailService {

@@ -27,8 +27,8 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 # running the tests using an instrumentation targeting Eamil, we
 # automatically get all of its classes loaded into our environment.
 
-LOCAL_PACKAGE_NAME := EmailTests
+LOCAL_PACKAGE_NAME := IEmailTests
 
-LOCAL_INSTRUMENTATION_FOR := Email
+LOCAL_INSTRUMENTATION_FOR := IEmail
 
 include $(BUILD_PACKAGE)

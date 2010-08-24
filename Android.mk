@@ -20,13 +20,13 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 # EXCHANGE-REMOVE-SECTION-START
 LOCAL_SRC_FILES += \
-    src/com/android/email/service/IEmailService.aidl \
-    src/com/android/email/service/IEmailServiceCallback.aidl
+    src/com/mwebster/email/service/IEmailService.aidl \
+    src/com/mwebster/email/service/IEmailServiceCallback.aidl
 # EXCHANGE-REMOVE-SECTION-END
 
 LOCAL_JAVA_STATIC_LIBRARIES := android-common
 
-LOCAL_PACKAGE_NAME := Email
+LOCAL_PACKAGE_NAME := IEmail
 
 LOCAL_PROGUARD_FLAGS := -include $(LOCAL_PATH)/proguard.flags
 
