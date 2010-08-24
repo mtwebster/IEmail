@@ -53,10 +53,10 @@ import java.util.ArrayList;
 
 public class EmailProvider extends ContentProvider {
 
-    private static final String TAG = "EmailProvider";
+    private static final String TAG = "IEmailProvider";
 
-    protected static final String DATABASE_NAME = "EmailProvider.db";
-    protected static final String BODY_DATABASE_NAME = "EmailProviderBody.db";
+    protected static final String DATABASE_NAME = "IEmailProvider.db";
+    protected static final String BODY_DATABASE_NAME = "IEmailProviderBody.db";
 
     public static final Uri INTEGRITY_CHECK_URI =
         Uri.parse("content://" + EmailContent.AUTHORITY + "/integrityCheck");
