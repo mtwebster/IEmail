@@ -474,11 +474,30 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
             case R.id.select_all:
             	onSelectAll();
             	return true;
+            case R.id.donate:
+                onDonate();
+            case R.id.changelog:
+                onChangelog();
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
+    private void onDonate() {
+        Intent myIntent = new Intent(Intent.ACTION_VIEW,
+                ContentURI.create("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4KLN8P4V5WH2J"));
+             startActivity(myIntent);
+    }
+    
+    private void onChangelog() {
+        Intent myIntent = new Intent(Intent.ACTION_VIEW,
+                ContentURI.create("http://www.mwebster.us"));
+             startActivity(myIntent);
+    }
+    
+    
+    
+    
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);

@@ -49,4 +49,12 @@
         android:title="@string/account_settings_action"
         android:icon="@android:drawable/ic_menu_preferences"
     />
+    <item android:id="@+id/donate"
+        android:title="@string/donate"
+        android:icon="@drawable/donate"
+    />
+    <item android:id="@+id/changelog"
+        android:title="@string/changelog"
+        android:icon="@drawable/changelog"
+    />
 </menu>
