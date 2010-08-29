@@ -1,6 +1,6 @@
-package com.android.email.activity.setup;
+package com.mwebster.email.activity.setup;
 
-import com.android.email.R;
+import com.mwebster.email.R;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
