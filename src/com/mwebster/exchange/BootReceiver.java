@@ -16,7 +16,7 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.email.ExchangeUtils;
+import com.mwebster.iemail.ExchangeUtils;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

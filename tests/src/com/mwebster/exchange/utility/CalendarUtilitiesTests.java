@@ -16,12 +16,12 @@
 
 package com.mwebster.exchange.utility;
 
-import com.mwebster.email.R;
-import com.mwebster.email.Utility;
-import com.mwebster.email.mail.Address;
-import com.mwebster.email.provider.EmailContent.Account;
-import com.mwebster.email.provider.EmailContent.Attachment;
-import com.mwebster.email.provider.EmailContent.Message;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.Message;
 
 import android.content.ContentValues;
 import android.content.Entity;

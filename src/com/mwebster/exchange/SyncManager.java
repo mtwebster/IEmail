@@ -77,24 +77,24 @@ import android.provider.Calendar.Calendars;
 import android.provider.Calendar.Events;
 import android.util.Log;
 
-import com.mwebster.email.AccountBackupRestore;
-import com.mwebster.email.Email;
-import com.mwebster.email.SecurityPolicy;
-import com.mwebster.email.Utility;
-import com.mwebster.email.mail.MessagingException;
-import com.mwebster.email.mail.transport.SSLUtils;
-import com.mwebster.email.provider.EmailContent;
-import com.mwebster.email.provider.EmailContent.Account;
-import com.mwebster.email.provider.EmailContent.Attachment;
-import com.mwebster.email.provider.EmailContent.HostAuth;
-import com.mwebster.email.provider.EmailContent.HostAuthColumns;
-import com.mwebster.email.provider.EmailContent.Mailbox;
-import com.mwebster.email.provider.EmailContent.MailboxColumns;
-import com.mwebster.email.provider.EmailContent.Message;
-import com.mwebster.email.provider.EmailContent.SyncColumns;
-import com.mwebster.email.service.EmailServiceStatus;
-import com.mwebster.email.service.IEmailService;
-import com.mwebster.email.service.IEmailServiceCallback;
+import com.mwebster.iemail.AccountBackupRestore;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.SecurityPolicy;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.transport.SSLUtils;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.HostAuth;
+import com.mwebster.iemail.provider.EmailContent.HostAuthColumns;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.SyncColumns;
+import com.mwebster.iemail.service.EmailServiceStatus;
+import com.mwebster.iemail.service.IEmailService;
+import com.mwebster.iemail.service.IEmailServiceCallback;
 import com.mwebster.exchange.adapter.CalendarSyncAdapter;
 import com.mwebster.exchange.utility.FileLogger;
 
@@ -1169,7 +1169,7 @@ public class SyncManager extends Service implements Runnable {
     static void checkSyncManagerServiceRunning() {
         // Get the service thread running if it isn't
         // This is a stopgap for cases in which SyncManager died (due to a crash somewhere in
-        // com.mwebster.email) and hasn't been restarted
+        // com.mwebster.iemail. and hasn't been restarted
         // See the comment for onCreate for details
         SyncManager syncManager = INSTANCE;
         if (syncManager == null) return;

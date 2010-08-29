@@ -17,13 +17,13 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.email.AccountTestCase;
-import com.mwebster.email.Email;
-import com.mwebster.email.provider.EmailContent;
-import com.mwebster.email.provider.EmailProvider;
-import com.mwebster.email.provider.ProviderTestUtils;
-import com.mwebster.email.provider.EmailContent.Account;
-import com.mwebster.email.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.AccountTestCase;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailProvider;
+import com.mwebster.iemail.provider.ProviderTestUtils;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
 import com.mwebster.exchange.SyncManager.SyncError;
 
 import android.accounts.AccountManager;

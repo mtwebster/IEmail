@@ -15,13 +15,13 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mwebster.email"
+    package="com.mwebster.iemail"
     android:versionCode="12"
     android:versionName="1.6">
     
     />
 
-    <original-package android:name="com.mwebster.email" />
+    <original-package android:name="com.mwebster.iemail" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
@@ -46,19 +46,19 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <!-- Grant permission to other apps to view attachments -->
-    <permission android:name="com.mwebster.email.permission.READ_ATTACHMENT"
+    <permission android:name="com.mwebster.iemail.permission.READ_ATTACHMENT"
                 android:permissionGroup="android.permission-group.MESSAGES"
                 android:protectionLevel="dangerous"
                 android:label="@string/read_attachment_label"
                 android:description="@string/read_attachment_desc"/>
-    <uses-permission android:name="com.mwebster.email.permission.READ_ATTACHMENT"/>
+    <uses-permission android:name="com.mwebster.iemail.permission.READ_ATTACHMENT"/>
 
     <!-- Grant permission to system apps to access provider (see provider below) -->
-    <permission android:name="com.mwebster.email.permission.ACCESS_PROVIDER"
+    <permission android:name="com.mwebster.iemail.permission.ACCESS_PROVIDER"
                 android:protectionLevel="signatureOrSystem"
                 android:label="@string/permission_access_provider_label"
                 android:description="@string/permission_access_provider_desc"/>
-    <uses-permission android:name="com.mwebster.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.mwebster.iemail.permission.ACCESS_PROVIDER"/>
 
     <application android:icon="@drawable/icon" android:label="@string/app_name"
         android:name="Email">
@@ -131,7 +131,7 @@
             android:label="@string/account_settings_action"
             >
             <intent-filter>
-                <action android:name="com.mwebster.email.activity.setup.ACCOUNT_MANAGER_ENTRY" />
+                <action android:name="com.mwebster.iemail.activity.setup.ACCOUNT_MANAGER_ENTRY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -335,19 +335,19 @@
 
         <provider
             android:name=".provider.AttachmentProvider"
-            android:authorities="com.mwebster.email.attachmentprovider"
+            android:authorities="com.mwebster.iemail.attachmentprovider"
             android:multiprocess="true"
             android:grantUriPermissions="true"
-            android:readPermission="com.mwebster.email.permission.READ_ATTACHMENT"
+            android:readPermission="com.mwebster.iemail.permission.READ_ATTACHMENT"
             />
 
         <!-- This provider MUST be protected by strict permissions, as granting access to
              it exposes user passwords and other confidential information. -->
         <provider
             android:name=".provider.EmailProvider"
-            android:authorities="com.mwebster.email.provider"
+            android:authorities="com.mwebster.iemail.provider"
             android:multiprocess="true"
-            android:permission="com.mwebster.email.permission.ACCESS_PROVIDER"
+            android:permission="com.mwebster.iemail.permission.ACCESS_PROVIDER"
             />
 
         <!--EXCHANGE-REMOVE-SECTION-START-->
@@ -357,7 +357,7 @@
             android:name="com.mwebster.exchange.provider.ExchangeProvider"
             android:authorities="com.mwebster.exchange.provider"
             android:multiprocess="true"
-            android:permission="com.mwebster.email.permission.ACCESS_PROVIDER"
+            android:permission="com.mwebster.iemail.permission.ACCESS_PROVIDER"
             />
         <!--EXCHANGE-REMOVE-SECTION-END-->
 

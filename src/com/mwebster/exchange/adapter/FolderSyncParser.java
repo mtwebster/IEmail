@@ -17,12 +17,12 @@
 
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.email.provider.AttachmentProvider;
-import com.mwebster.email.provider.EmailContent;
-import com.mwebster.email.provider.EmailProvider;
-import com.mwebster.email.provider.EmailContent.AccountColumns;
-import com.mwebster.email.provider.EmailContent.Mailbox;
-import com.mwebster.email.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.AttachmentProvider;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailProvider;
+import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
 import com.mwebster.exchange.Eas;
 import com.mwebster.exchange.MockParserStream;
 import com.mwebster.exchange.SyncManager;

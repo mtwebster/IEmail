@@ -17,9 +17,9 @@
 
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.email.provider.EmailContent.Account;
-import com.mwebster.email.provider.EmailContent.Mailbox;
-import com.mwebster.email.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
 import com.mwebster.exchange.EasSyncService;
 import com.mwebster.exchange.SyncManager;
 

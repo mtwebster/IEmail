@@ -16,13 +16,13 @@
 
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.email.provider.EmailContent;
-import com.mwebster.email.provider.ProviderTestUtils;
-import com.mwebster.email.provider.EmailContent.Account;
-import com.mwebster.email.provider.EmailContent.Body;
-import com.mwebster.email.provider.EmailContent.Mailbox;
-import com.mwebster.email.provider.EmailContent.Message;
-import com.mwebster.email.provider.EmailContent.SyncColumns;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.ProviderTestUtils;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Body;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.SyncColumns;
 import com.mwebster.exchange.EasSyncService;
 import com.mwebster.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser;
 import com.mwebster.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser.ServerChange;

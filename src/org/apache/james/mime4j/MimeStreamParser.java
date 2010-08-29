@@ -19,8 +19,8 @@
 
 package org.apache.james.mime4j;
 
-import com.mwebster.email.Email;
-import com.mwebster.email.mail.transport.LoggingInputStream;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.mail.transport.LoggingInputStream;
 
 import org.apache.james.mime4j.decoder.Base64InputStream;
 import org.apache.james.mime4j.decoder.QuotedPrintableInputStream;

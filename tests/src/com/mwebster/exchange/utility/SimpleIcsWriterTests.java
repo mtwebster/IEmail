@@ -15,7 +15,7 @@
 
 package com.mwebster.exchange.utility;
 
-import com.mwebster.email.Utility;
+import com.mwebster.iemail.Utility;
 
 import junit.framework.TestCase;
 

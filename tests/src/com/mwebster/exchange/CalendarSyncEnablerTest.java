@@ -16,9 +16,9 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.email.AccountTestCase;
-import com.mwebster.email.Email;
-import com.mwebster.email.service.MailService;
+import com.mwebster.iemail.AccountTestCase;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.service.MailService;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;

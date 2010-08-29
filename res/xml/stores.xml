@@ -30,9 +30,9 @@
     -->
 
 <stores>
-    <store scheme="local" class="com.mwebster.email.mail.store.LocalStore" />
-    <store scheme="pop3" class="com.mwebster.email.mail.store.Pop3Store" />
-    <store scheme="imap" class="com.mwebster.email.mail.store.ImapStore" />
-    <store scheme="eas" class="com.mwebster.email.mail.store.ExchangeStore" 
+    <store scheme="local" class="com.mwebster.iemail.mail.store.LocalStore" />
+    <store scheme="pop3" class="com.mwebster.iemail.mail.store.Pop3Store" />
+    <store scheme="imap" class="com.mwebster.iemail.mail.store.ImapStore" />
+    <store scheme="eas" class="com.mwebster.iemail.mail.store.ExchangeStore" 
         push="true" visibleLimitDefault="-1" visibleLimitIncrement="-1" />
 </stores>

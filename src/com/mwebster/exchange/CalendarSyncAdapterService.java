@@ -16,10 +16,10 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.email.provider.EmailContent;
-import com.mwebster.email.provider.EmailContent.AccountColumns;
-import com.mwebster.email.provider.EmailContent.Mailbox;
-import com.mwebster.email.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
 
 import android.accounts.Account;
 import android.accounts.OperationCanceledException;

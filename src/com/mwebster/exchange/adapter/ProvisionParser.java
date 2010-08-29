@@ -15,8 +15,8 @@
 
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.email.SecurityPolicy;
-import com.mwebster.email.SecurityPolicy.PolicySet;
+import com.mwebster.iemail.SecurityPolicy;
+import com.mwebster.iemail.SecurityPolicy.PolicySet;
 import com.mwebster.exchange.EasSyncService;
 
 import org.xmlpull.v1.XmlPullParser;
