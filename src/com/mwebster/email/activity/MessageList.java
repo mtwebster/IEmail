@@ -34,6 +34,7 @@ import com.mwebster.email.provider.EmailContent.Message;
 import com.mwebster.email.provider.EmailContent.MessageColumns;
 import com.mwebster.email.service.MailService;
 
+
 import android.app.ListActivity;
 import android.app.NotificationManager;
 import android.content.ContentResolver;
@@ -485,13 +486,13 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
 
     private void onDonate() {
         Intent myIntent = new Intent(Intent.ACTION_VIEW,
-                ContentURI.create("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4KLN8P4V5WH2J"));
+                Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4KLN8P4V5WH2J"));
              startActivity(myIntent);
     }
     
     private void onChangelog() {
         Intent myIntent = new Intent(Intent.ACTION_VIEW,
-                ContentURI.create("http://www.mwebster.us"));
+                Uri.parse("http://www.mwebster.us"));
              startActivity(myIntent);
     }
     

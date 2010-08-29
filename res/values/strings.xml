@@ -740,4 +740,8 @@
     <string name="sample_account_name" >Sample Account Name</string>
     <string name="default_rgb_value" >255</string>
     <string name="default_html_color_code" >0xFFFFFFFF</string>
+    
+    <string name="donate">Donate!</string>
+    <string name="changelog">Changelog/Website</string>
+    
 </resources>
