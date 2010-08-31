@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

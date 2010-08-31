@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.iemail.activity;
 
-import com.android.email.Email;
-import com.android.email.MessagingController;
-import com.android.email.R;
-import com.android.email.mail.internet.BinaryTempFileBody;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.MessagingController;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.mail.internet.BinaryTempFileBody;
 
 import android.app.Application;
 import android.content.Context;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.mwebster.iemail.activity.setup;
 
-import com.android.email.R;
-import com.android.email.SecurityPolicy;
-import com.android.email.provider.EmailContent.Account;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.SecurityPolicy;
+import com.mwebster.iemail.provider.EmailContent.Account;
 
 import android.app.Activity;
 import android.app.admin.DevicePolicyManager;

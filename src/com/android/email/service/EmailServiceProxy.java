@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.mwebster.iemail.service;
 
-import com.android.email.mail.MessagingException;
+import com.mwebster.iemail.mail.MessagingException;
 
 import android.content.ComponentName;
 import android.content.Context;

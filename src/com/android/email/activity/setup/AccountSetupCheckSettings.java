@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.mwebster.iemail.activity.setup;
 
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.mail.AuthenticationFailedException;
-import com.android.email.mail.CertificateValidationException;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Sender;
-import com.android.email.mail.Store;
-import com.android.email.provider.EmailContent;
-import com.android.email.service.EmailServiceProxy;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.mail.AuthenticationFailedException;
+import com.mwebster.iemail.mail.CertificateValidationException;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Sender;
+import com.mwebster.iemail.mail.Store;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.service.EmailServiceProxy;
 
 import android.app.Activity;
 import android.app.AlertDialog;

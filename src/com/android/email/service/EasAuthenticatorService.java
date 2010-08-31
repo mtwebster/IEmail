@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.mwebster.iemail.service;
 
-import com.android.email.Email;
-import com.android.email.activity.setup.AccountSetupBasics;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.activity.setup.AccountSetupBasics;
 
 import android.accounts.AbstractAccountAuthenticator;
 import android.accounts.Account;

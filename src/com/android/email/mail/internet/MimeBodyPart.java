@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.internet;
+package com.mwebster.iemail.mail.internet;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -22,9 +22,9 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.regex.Pattern;
 
-import com.android.email.mail.Body;
-import com.android.email.mail.BodyPart;
-import com.android.email.mail.MessagingException;
+import com.mwebster.iemail.mail.Body;
+import com.mwebster.iemail.mail.BodyPart;
+import com.mwebster.iemail.mail.MessagingException;
 
 /**
  * TODO this is a close approximation of Message, need to update along with

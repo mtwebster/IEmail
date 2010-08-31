@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.iemail.activity;
 
 import android.widget.AutoCompleteTextView.Validator;
 import android.widget.MultiAutoCompleteTextView;
@@ -23,7 +23,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.graphics.drawable.Drawable;
 import android.graphics.Rect;
-import com.android.email.R;
+import com.mwebster.iemail.R;
 
 /**
  * This is a MultiAutoCompleteTextView which sets the error state

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.utility;
+package com.mwebster.exchange.utility;
 
 import android.content.Context;
 import android.os.Environment;

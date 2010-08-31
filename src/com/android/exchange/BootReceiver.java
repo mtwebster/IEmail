@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
-import com.android.email.ExchangeUtils;
+import com.mwebster.iemail.ExchangeUtils;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

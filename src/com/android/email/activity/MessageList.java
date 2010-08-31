@@ -14,25 +14,25 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.iemail.activity;
 
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.Utility;
-import com.android.email.activity.setup.AccountSecurity;
-import com.android.email.activity.setup.AccountSettings;
-import com.android.email.mail.AuthenticationFailedException;
-import com.android.email.mail.CertificateValidationException;
-import com.android.email.mail.MessagingException;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.AccountColumns;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.MailboxColumns;
-import com.android.email.provider.EmailContent.Message;
-import com.android.email.provider.EmailContent.MessageColumns;
-import com.android.email.service.MailService;
+import com.mwebster.iemail.Controller;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.activity.setup.AccountSecurity;
+import com.mwebster.iemail.activity.setup.AccountSettings;
+import com.mwebster.iemail.mail.AuthenticationFailedException;
+import com.mwebster.iemail.mail.CertificateValidationException;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.MessageColumns;
+import com.mwebster.iemail.service.MailService;
 
 import android.app.ListActivity;
 import android.app.NotificationManager;

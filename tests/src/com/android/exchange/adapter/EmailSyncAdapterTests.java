@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.Body;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.Message;
-import com.android.email.provider.EmailContent.SyncColumns;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser;
-import com.android.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser.ServerChange;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.ProviderTestUtils;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Body;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.SyncColumns;
+import com.mwebster.exchange.EasSyncService;
+import com.mwebster.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser;
+import com.mwebster.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser.ServerChange;
 
 import android.content.ContentUris;
 import android.content.ContentValues;

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.mwebster.iemail.service;
 
-import com.android.email.AccountBackupRestore;
-import com.android.email.Email;
+import com.mwebster.iemail.AccountBackupRestore;
+import com.mwebster.iemail.Email;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

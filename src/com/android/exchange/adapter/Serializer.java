@@ -21,10 +21,10 @@
 //Contributors: Jonathan Cox, Bogdan Onoiu, Jerry Tian
 //Simplified for Google, Inc. by Marc Blank
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.exchange.Eas;
-import com.android.exchange.utility.FileLogger;
+import com.mwebster.exchange.Eas;
+import com.mwebster.exchange.utility.FileLogger;
 
 import android.content.ContentValues;
 import android.util.Log;

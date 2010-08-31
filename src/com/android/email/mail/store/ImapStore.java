@@ -14,34 +14,34 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.mwebster.iemail.mail.store;
 
-import com.android.email.Email;
-import com.android.email.Preferences;
-import com.android.email.Utility;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.mail.AuthenticationFailedException;
-import com.android.email.mail.CertificateValidationException;
-import com.android.email.mail.FetchProfile;
-import com.android.email.mail.Flag;
-import com.android.email.mail.Folder;
-import com.android.email.mail.Message;
-import com.android.email.mail.MessageRetrievalListener;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Part;
-import com.android.email.mail.Store;
-import com.android.email.mail.Transport;
-import com.android.email.mail.internet.MimeBodyPart;
-import com.android.email.mail.internet.MimeHeader;
-import com.android.email.mail.internet.MimeMessage;
-import com.android.email.mail.internet.MimeMultipart;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.mail.store.ImapResponseParser.ImapList;
-import com.android.email.mail.store.ImapResponseParser.ImapResponse;
-import com.android.email.mail.transport.CountingOutputStream;
-import com.android.email.mail.transport.DiscourseLogger;
-import com.android.email.mail.transport.EOLConvertingOutputStream;
-import com.android.email.mail.transport.MailTransport;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.Preferences;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.VendorPolicyLoader;
+import com.mwebster.iemail.mail.AuthenticationFailedException;
+import com.mwebster.iemail.mail.CertificateValidationException;
+import com.mwebster.iemail.mail.FetchProfile;
+import com.mwebster.iemail.mail.Flag;
+import com.mwebster.iemail.mail.Folder;
+import com.mwebster.iemail.mail.Message;
+import com.mwebster.iemail.mail.MessageRetrievalListener;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Part;
+import com.mwebster.iemail.mail.Store;
+import com.mwebster.iemail.mail.Transport;
+import com.mwebster.iemail.mail.internet.MimeBodyPart;
+import com.mwebster.iemail.mail.internet.MimeHeader;
+import com.mwebster.iemail.mail.internet.MimeMessage;
+import com.mwebster.iemail.mail.internet.MimeMultipart;
+import com.mwebster.iemail.mail.internet.MimeUtility;
+import com.mwebster.iemail.mail.store.ImapResponseParser.ImapList;
+import com.mwebster.iemail.mail.store.ImapResponseParser.ImapResponse;
+import com.mwebster.iemail.mail.transport.CountingOutputStream;
+import com.mwebster.iemail.mail.transport.DiscourseLogger;
+import com.mwebster.iemail.mail.transport.EOLConvertingOutputStream;
+import com.mwebster.iemail.mail.transport.MailTransport;
 import com.beetstra.jutf7.CharsetProvider;
 
 import android.content.Context;

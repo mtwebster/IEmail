@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.mwebster.iemail.mail.store;
 
-import com.android.email.Email;
-import com.android.email.Utility;
-import com.android.email.mail.Address;
-import com.android.email.mail.Body;
-import com.android.email.mail.FetchProfile;
-import com.android.email.mail.Flag;
-import com.android.email.mail.Folder;
-import com.android.email.mail.Message;
-import com.android.email.mail.Message.RecipientType;
-import com.android.email.mail.MessageRetrievalListener;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Part;
-import com.android.email.mail.Store;
-import com.android.email.mail.Store.PersistentDataCallbacks;
-import com.android.email.mail.internet.MimeBodyPart;
-import com.android.email.mail.internet.MimeHeader;
-import com.android.email.mail.internet.MimeMessage;
-import com.android.email.mail.internet.MimeMultipart;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.mail.internet.TextBody;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.mail.Body;
+import com.mwebster.iemail.mail.FetchProfile;
+import com.mwebster.iemail.mail.Flag;
+import com.mwebster.iemail.mail.Folder;
+import com.mwebster.iemail.mail.Message;
+import com.mwebster.iemail.mail.Message.RecipientType;
+import com.mwebster.iemail.mail.MessageRetrievalListener;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Part;
+import com.mwebster.iemail.mail.Store;
+import com.mwebster.iemail.mail.Store.PersistentDataCallbacks;
+import com.mwebster.iemail.mail.internet.MimeBodyPart;
+import com.mwebster.iemail.mail.internet.MimeHeader;
+import com.mwebster.iemail.mail.internet.MimeMessage;
+import com.mwebster.iemail.mail.internet.MimeMultipart;
+import com.mwebster.iemail.mail.internet.MimeUtility;
+import com.mwebster.iemail.mail.internet.TextBody;
 
 import org.apache.commons.io.IOUtils;
 

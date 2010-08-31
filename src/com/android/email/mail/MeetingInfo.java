@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.mwebster.iemail.mail;
 
 public class MeetingInfo {
     // Predefined tags; others can be added

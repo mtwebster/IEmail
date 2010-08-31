@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.mwebster.iemail.mail.store;
 
-import com.android.email.Email;
-import com.android.email.FixedLengthInputStream;
-import com.android.email.PeekableInputStream;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.transport.DiscourseLogger;
-import com.android.email.mail.transport.LoggingInputStream;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.FixedLengthInputStream;
+import com.mwebster.iemail.PeekableInputStream;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.transport.DiscourseLogger;
+import com.mwebster.iemail.mail.transport.LoggingInputStream;
 
 import android.util.Config;
 import android.util.Log;

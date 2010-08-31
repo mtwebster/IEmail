@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
 /**
  * The wbxml tags for EAS are all defined here.

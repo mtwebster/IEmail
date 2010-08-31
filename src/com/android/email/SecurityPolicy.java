@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.activity.setup.AccountSecurity;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.AccountColumns;
-import com.android.email.service.MailService;
+import com.mwebster.iemail.activity.setup.AccountSecurity;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemail.service.MailService;
 
 import android.app.Notification;
 import android.app.NotificationManager;

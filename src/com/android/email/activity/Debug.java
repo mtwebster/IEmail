@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.iemail.activity;
 
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.Preferences;
-import com.android.email.R;
-import com.android.exchange.Eas;
-import com.android.exchange.utility.FileLogger;
+import com.mwebster.iemail.Controller;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.Preferences;
+import com.mwebster.iemail.R;
+import com.mwebster.exchange.Eas;
+import com.mwebster.exchange.utility.FileLogger;
 
 import android.app.Activity;
 import android.content.Context;

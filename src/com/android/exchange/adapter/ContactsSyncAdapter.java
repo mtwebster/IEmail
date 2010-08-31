@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.exchange.Eas;
-import com.android.exchange.EasSyncService;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.exchange.Eas;
+import com.mwebster.exchange.EasSyncService;
 
 import android.content.ContentProviderClient;
 import android.content.ContentProviderOperation;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.mwebster.iemail.activity.setup;
 
 import android.widget.Spinner;
 

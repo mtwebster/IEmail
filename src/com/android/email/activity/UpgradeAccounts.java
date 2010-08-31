@@ -14,29 +14,29 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.iemail.activity;
 
-import com.android.email.Account;
-import com.android.email.Email;
-import com.android.email.LegacyConversions;
-import com.android.email.Preferences;
-import com.android.email.R;
-import com.android.email.Utility;
-import com.android.email.activity.setup.AccountSettingsUtils;
-import com.android.email.activity.setup.AccountSettingsUtils.Provider;
-import com.android.email.mail.FetchProfile;
-import com.android.email.mail.Flag;
-import com.android.email.mail.Folder;
-import com.android.email.mail.Message;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Part;
-import com.android.email.mail.Store;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.mail.store.LocalStore;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.AccountColumns;
-import com.android.email.provider.EmailContent.HostAuth;
-import com.android.email.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.Account;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.LegacyConversions;
+import com.mwebster.iemail.Preferences;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.activity.setup.AccountSettingsUtils;
+import com.mwebster.iemail.activity.setup.AccountSettingsUtils.Provider;
+import com.mwebster.iemail.mail.FetchProfile;
+import com.mwebster.iemail.mail.Flag;
+import com.mwebster.iemail.mail.Folder;
+import com.mwebster.iemail.mail.Message;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Part;
+import com.mwebster.iemail.mail.Store;
+import com.mwebster.iemail.mail.internet.MimeUtility;
+import com.mwebster.iemail.mail.store.LocalStore;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemail.provider.EmailContent.HostAuth;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
 
 import android.app.ListActivity;
 import android.content.Context;

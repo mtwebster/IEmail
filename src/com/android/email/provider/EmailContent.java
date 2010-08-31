@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.mwebster.iemail.provider;
 
 import android.content.ContentProviderOperation;
 import android.content.ContentProviderResult;

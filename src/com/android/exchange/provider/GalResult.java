@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.provider;
+package com.mwebster.exchange.provider;
 
 import java.util.ArrayList;
 

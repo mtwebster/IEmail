@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.exchange.adapter.CalendarSyncAdapter.EasCalendarSyncParser;
+import com.mwebster.exchange.adapter.CalendarSyncAdapter.EasCalendarSyncParser;
 
 import android.content.ContentValues;
 import android.provider.Calendar.Events;

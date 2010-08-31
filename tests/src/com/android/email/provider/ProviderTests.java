@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.mwebster.iemail.provider;
 
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.AccountColumns;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.AttachmentColumns;
-import com.android.email.provider.EmailContent.Body;
-import com.android.email.provider.EmailContent.BodyColumns;
-import com.android.email.provider.EmailContent.HostAuth;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.MailboxColumns;
-import com.android.email.provider.EmailContent.Message;
-import com.android.email.provider.EmailContent.MessageColumns;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.AttachmentColumns;
+import com.mwebster.iemail.provider.EmailContent.Body;
+import com.mwebster.iemail.provider.EmailContent.BodyColumns;
+import com.mwebster.iemail.provider.EmailContent.HostAuth;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.MessageColumns;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;

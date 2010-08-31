@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.internet;
+package com.mwebster.iemail.mail.internet;
 
-import com.android.email.mail.Body;
-import com.android.email.mail.MessagingException;
+import com.mwebster.iemail.mail.Body;
+import com.mwebster.iemail.mail.MessagingException;
 
 import org.apache.commons.io.IOUtils;
 

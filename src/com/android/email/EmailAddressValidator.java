@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.mail.Address;
+import com.mwebster.iemail.mail.Address;
 
 import android.widget.AutoCompleteTextView.Validator;
 

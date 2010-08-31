@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailProvider;
+import com.mwebster.iemail.provider.ProviderTestUtils;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.Message;
 
 import android.content.Context;
 import android.test.ProviderTestCase2;

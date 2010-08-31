@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.iemail.activity;
 
-import com.android.email.Email;
-import com.android.email.EmailAddressValidator;
-import com.android.email.R;
-import com.android.email.mail.Address;
-import com.android.email.mail.MessagingException;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.Message;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.EmailAddressValidator;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Message;
 
 import android.content.ContentUris;
 import android.content.Context;

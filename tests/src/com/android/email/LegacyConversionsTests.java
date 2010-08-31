@@ -14,33 +14,33 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.mail.Address;
-import com.android.email.mail.Body;
-import com.android.email.mail.BodyPart;
-import com.android.email.mail.Flag;
-import com.android.email.mail.Folder;
-import com.android.email.mail.Message;
-import com.android.email.mail.MessageTestUtils;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Part;
-import com.android.email.mail.Folder.OpenMode;
-import com.android.email.mail.Message.RecipientType;
-import com.android.email.mail.MessageTestUtils.MessageBuilder;
-import com.android.email.mail.MessageTestUtils.MultipartBuilder;
-import com.android.email.mail.internet.MimeBodyPart;
-import com.android.email.mail.internet.MimeHeader;
-import com.android.email.mail.internet.MimeMessage;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.mail.internet.TextBody;
-import com.android.email.mail.store.LocalStore;
-import com.android.email.mail.store.LocalStoreUnitTests;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.mail.Body;
+import com.mwebster.iemail.mail.BodyPart;
+import com.mwebster.iemail.mail.Flag;
+import com.mwebster.iemail.mail.Folder;
+import com.mwebster.iemail.mail.Message;
+import com.mwebster.iemail.mail.MessageTestUtils;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Part;
+import com.mwebster.iemail.mail.Folder.OpenMode;
+import com.mwebster.iemail.mail.Message.RecipientType;
+import com.mwebster.iemail.mail.MessageTestUtils.MessageBuilder;
+import com.mwebster.iemail.mail.MessageTestUtils.MultipartBuilder;
+import com.mwebster.iemail.mail.internet.MimeBodyPart;
+import com.mwebster.iemail.mail.internet.MimeHeader;
+import com.mwebster.iemail.mail.internet.MimeMessage;
+import com.mwebster.iemail.mail.internet.MimeUtility;
+import com.mwebster.iemail.mail.internet.TextBody;
+import com.mwebster.iemail.mail.store.LocalStore;
+import com.mwebster.iemail.mail.store.LocalStoreUnitTests;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailProvider;
+import com.mwebster.iemail.provider.ProviderTestUtils;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
 
 import android.content.ContentUris;
 import android.content.Context;

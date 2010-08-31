@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.email.Email;
-import com.android.email.Utility;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.Message;
-import com.android.exchange.Eas;
-import com.android.exchange.EasOutboxService;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.utility.CalendarUtilities;
-import com.android.exchange.utility.Duration;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.exchange.Eas;
+import com.mwebster.exchange.EasOutboxService;
+import com.mwebster.exchange.EasSyncService;
+import com.mwebster.exchange.utility.CalendarUtilities;
+import com.mwebster.exchange.utility.Duration;
 
 import android.content.ContentProviderClient;
 import android.content.ContentProviderOperation;

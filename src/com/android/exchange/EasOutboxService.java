@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.transport.Rfc822Output;
-import com.android.email.provider.EmailContent.Body;
-import com.android.email.provider.EmailContent.BodyColumns;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.MailboxColumns;
-import com.android.email.provider.EmailContent.Message;
-import com.android.email.provider.EmailContent.MessageColumns;
-import com.android.email.provider.EmailContent.SyncColumns;
-import com.android.email.service.EmailServiceStatus;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.transport.Rfc822Output;
+import com.mwebster.iemail.provider.EmailContent.Body;
+import com.mwebster.iemail.provider.EmailContent.BodyColumns;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.MessageColumns;
+import com.mwebster.iemail.provider.EmailContent.SyncColumns;
+import com.mwebster.iemail.service.EmailServiceStatus;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;

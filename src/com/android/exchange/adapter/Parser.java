@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.exchange.Eas;
-import com.android.exchange.EasException;
-import com.android.exchange.utility.FileLogger;
+import com.mwebster.exchange.Eas;
+import com.mwebster.exchange.EasException;
+import com.mwebster.exchange.utility.FileLogger;
 
 import android.content.Context;
 import android.util.Log;

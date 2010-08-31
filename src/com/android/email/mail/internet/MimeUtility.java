@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.internet;
+package com.mwebster.iemail.mail.internet;
 
-import com.android.email.Email;
-import com.android.email.mail.Body;
-import com.android.email.mail.BodyPart;
-import com.android.email.mail.Message;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Multipart;
-import com.android.email.mail.Part;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.mail.Body;
+import com.mwebster.iemail.mail.BodyPart;
+import com.mwebster.iemail.mail.Message;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Multipart;
+import com.mwebster.iemail.mail.Part;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.james.mime4j.codec.EncoderUtil;

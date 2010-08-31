@@ -13,7 +13,7 @@
  ** limitations under the License.
  */
 
-package com.android.exchange.utility;
+package com.mwebster.exchange.utility;
 
 import java.text.ParseException;
 import java.util.Calendar;

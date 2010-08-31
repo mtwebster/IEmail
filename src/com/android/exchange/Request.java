@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
 /**
  * Requests for mailbox actions are handled by subclasses of this abstract class.

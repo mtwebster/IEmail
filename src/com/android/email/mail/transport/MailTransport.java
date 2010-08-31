@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.transport;
+package com.mwebster.iemail.mail.transport;
 
-import com.android.email.Email;
-import com.android.email.mail.CertificateValidationException;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Transport;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.mail.CertificateValidationException;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Transport;
 
 import android.util.Config;
 import android.util.Log;

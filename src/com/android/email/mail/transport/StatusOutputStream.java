@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.transport;
+package com.mwebster.iemail.mail.transport;
 
-import com.android.email.Email;
+import com.mwebster.iemail.Email;
 
 import android.util.Log;
 

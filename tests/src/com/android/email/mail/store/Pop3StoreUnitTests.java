@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.mwebster.iemail.mail.store;
 
-import com.android.email.mail.Address;
-import com.android.email.mail.FetchProfile;
-import com.android.email.mail.Flag;
-import com.android.email.mail.Folder;
-import com.android.email.mail.Message;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Transport;
-import com.android.email.mail.Folder.FolderType;
-import com.android.email.mail.Folder.OpenMode;
-import com.android.email.mail.Message.RecipientType;
-import com.android.email.mail.internet.BinaryTempFileBody;
-import com.android.email.mail.internet.MimeMessage;
-import com.android.email.mail.transport.MockTransport;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.mail.FetchProfile;
+import com.mwebster.iemail.mail.Flag;
+import com.mwebster.iemail.mail.Folder;
+import com.mwebster.iemail.mail.Message;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Transport;
+import com.mwebster.iemail.mail.Folder.FolderType;
+import com.mwebster.iemail.mail.Folder.OpenMode;
+import com.mwebster.iemail.mail.Message.RecipientType;
+import com.mwebster.iemail.mail.internet.BinaryTempFileBody;
+import com.mwebster.iemail.mail.internet.MimeMessage;
+import com.mwebster.iemail.mail.transport.MockTransport;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;

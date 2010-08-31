@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.exchange.EasSyncService;
-import com.android.exchange.IllegalHeartbeatException;
-import com.android.exchange.StaleFolderListException;
+import com.mwebster.exchange.EasSyncService;
+import com.mwebster.exchange.IllegalHeartbeatException;
+import com.mwebster.exchange.StaleFolderListException;
 
 import java.io.IOException;
 import java.io.InputStream;

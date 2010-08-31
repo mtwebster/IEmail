@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.email.SecurityPolicy.PolicySet;
+import com.mwebster.iemail.SecurityPolicy.PolicySet;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

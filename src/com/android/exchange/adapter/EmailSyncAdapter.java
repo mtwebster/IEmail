@@ -15,27 +15,27 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.email.Utility;
-import com.android.email.mail.Address;
-import com.android.email.mail.MeetingInfo;
-import com.android.email.mail.PackedString;
-import com.android.email.provider.AttachmentProvider;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.AccountColumns;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.Body;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.Message;
-import com.android.email.provider.EmailContent.MessageColumns;
-import com.android.email.provider.EmailContent.SyncColumns;
-import com.android.email.service.MailService;
-import com.android.exchange.Eas;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.utility.CalendarUtilities;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.mail.MeetingInfo;
+import com.mwebster.iemail.mail.PackedString;
+import com.mwebster.iemail.provider.AttachmentProvider;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailProvider;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.Body;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.MessageColumns;
+import com.mwebster.iemail.provider.EmailContent.SyncColumns;
+import com.mwebster.iemail.service.MailService;
+import com.mwebster.exchange.Eas;
+import com.mwebster.exchange.EasSyncService;
+import com.mwebster.exchange.utility.CalendarUtilities;
 
 import android.content.ContentProviderOperation;
 import android.content.ContentResolver;

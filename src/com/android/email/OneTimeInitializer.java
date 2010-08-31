@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.service.EasAuthenticatorService;
-import com.android.email.service.EasAuthenticatorServiceAlternate;
+import com.mwebster.iemail.service.EasAuthenticatorService;
+import com.mwebster.iemail.service.EasAuthenticatorServiceAlternate;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;

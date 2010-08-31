@@ -31,7 +31,7 @@
  * constructor.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
 import org.apache.http.conn.scheme.HostNameResolver;
 import org.apache.http.conn.scheme.LayeredSocketFactory;

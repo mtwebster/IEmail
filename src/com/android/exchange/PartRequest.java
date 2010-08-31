@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
-import com.android.email.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
 
 /**
  * PartRequest is the EAS wrapper for attachment loading requests.  In addition to information about

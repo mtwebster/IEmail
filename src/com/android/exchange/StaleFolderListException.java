@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
 public class StaleFolderListException extends EasException {
     private static final long serialVersionUID = 1L;

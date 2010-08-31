@@ -14,32 +14,32 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.mail.FetchProfile;
-import com.android.email.mail.Flag;
-import com.android.email.mail.Folder;
-import com.android.email.mail.Message;
-import com.android.email.mail.MessageRetrievalListener;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Part;
-import com.android.email.mail.Sender;
-import com.android.email.mail.Store;
-import com.android.email.mail.StoreSynchronizer;
-import com.android.email.mail.Folder.FolderType;
-import com.android.email.mail.Folder.OpenMode;
-import com.android.email.mail.internet.MimeBodyPart;
-import com.android.email.mail.internet.MimeHeader;
-import com.android.email.mail.internet.MimeMultipart;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.provider.AttachmentProvider;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.AttachmentColumns;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.MailboxColumns;
-import com.android.email.provider.EmailContent.MessageColumns;
-import com.android.email.provider.EmailContent.SyncColumns;
+import com.mwebster.iemail.mail.FetchProfile;
+import com.mwebster.iemail.mail.Flag;
+import com.mwebster.iemail.mail.Folder;
+import com.mwebster.iemail.mail.Message;
+import com.mwebster.iemail.mail.MessageRetrievalListener;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Part;
+import com.mwebster.iemail.mail.Sender;
+import com.mwebster.iemail.mail.Store;
+import com.mwebster.iemail.mail.StoreSynchronizer;
+import com.mwebster.iemail.mail.Folder.FolderType;
+import com.mwebster.iemail.mail.Folder.OpenMode;
+import com.mwebster.iemail.mail.internet.MimeBodyPart;
+import com.mwebster.iemail.mail.internet.MimeHeader;
+import com.mwebster.iemail.mail.internet.MimeMultipart;
+import com.mwebster.iemail.mail.internet.MimeUtility;
+import com.mwebster.iemail.provider.AttachmentProvider;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.AttachmentColumns;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.EmailContent.MessageColumns;
+import com.mwebster.iemail.provider.EmailContent.SyncColumns;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;

@@ -14,26 +14,26 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.mwebster.iemail.activity;
 
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.Utility;
-import com.android.email.mail.Address;
-import com.android.email.mail.MeetingInfo;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.PackedString;
-import com.android.email.mail.internet.EmailHtmlUtil;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.provider.AttachmentProvider;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.Body;
-import com.android.email.provider.EmailContent.BodyColumns;
-import com.android.email.provider.EmailContent.Message;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.service.EmailServiceConstants;
+import com.mwebster.iemail.Controller;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.mail.MeetingInfo;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.PackedString;
+import com.mwebster.iemail.mail.internet.EmailHtmlUtil;
+import com.mwebster.iemail.mail.internet.MimeUtility;
+import com.mwebster.iemail.provider.AttachmentProvider;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.Body;
+import com.mwebster.iemail.provider.EmailContent.BodyColumns;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.service.EmailServiceConstants;
 
 import org.apache.commons.io.IOUtils;
 

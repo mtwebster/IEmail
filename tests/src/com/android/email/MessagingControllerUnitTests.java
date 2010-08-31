@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.mail.MockFolder;
-import com.android.email.provider.EmailContent;
+import com.mwebster.iemail.mail.MockFolder;
+import com.mwebster.iemail.provider.EmailContent;
 
 import android.content.ContentUris;
 import android.net.Uri;

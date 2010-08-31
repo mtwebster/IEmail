@@ -1,7 +1,7 @@
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.exchange.EasSyncService;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.exchange.EasSyncService;
 
 import java.io.IOException;
 import java.io.InputStream;

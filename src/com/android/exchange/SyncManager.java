@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.mwebster.exchange;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -77,26 +77,26 @@ import android.provider.Calendar.Calendars;
 import android.provider.Calendar.Events;
 import android.util.Log;
 
-import com.android.email.AccountBackupRestore;
-import com.android.email.Email;
-import com.android.email.SecurityPolicy;
-import com.android.email.Utility;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.transport.SSLUtils;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.HostAuth;
-import com.android.email.provider.EmailContent.HostAuthColumns;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.MailboxColumns;
-import com.android.email.provider.EmailContent.Message;
-import com.android.email.provider.EmailContent.SyncColumns;
-import com.android.email.service.EmailServiceStatus;
-import com.android.email.service.IEmailService;
-import com.android.email.service.IEmailServiceCallback;
-import com.android.exchange.adapter.CalendarSyncAdapter;
-import com.android.exchange.utility.FileLogger;
+import com.mwebster.iemail.AccountBackupRestore;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.SecurityPolicy;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.transport.SSLUtils;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.HostAuth;
+import com.mwebster.iemail.provider.EmailContent.HostAuthColumns;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemail.provider.EmailContent.SyncColumns;
+import com.mwebster.iemail.service.EmailServiceStatus;
+import com.mwebster.iemail.service.IEmailService;
+import com.mwebster.iemail.service.IEmailServiceCallback;
+import com.mwebster.exchange.adapter.CalendarSyncAdapter;
+import com.mwebster.exchange.utility.FileLogger;
 
 /**
  * The SyncManager handles all aspects of starting, maintaining, and stopping the various sync

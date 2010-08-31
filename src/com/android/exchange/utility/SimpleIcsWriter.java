@@ -13,9 +13,9 @@
  ** limitations under the License.
  */
 
-package com.android.exchange.utility;
+package com.mwebster.exchange.utility;
 
-import com.android.email.Utility;
+import com.mwebster.iemail.Utility;
 
 import android.text.TextUtils;
 

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.mwebster.iemail.mail;
 
-import com.android.email.Email;
-import com.android.email.R;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.R;
 
 import org.xmlpull.v1.XmlPullParserException;
 

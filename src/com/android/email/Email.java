@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.activity.AccountShortcutPicker;
-import com.android.email.activity.Debug;
-import com.android.email.activity.MessageCompose;
-import com.android.email.mail.internet.BinaryTempFileBody;
-import com.android.email.provider.EmailContent;
-import com.android.email.service.BootReceiver;
-import com.android.email.service.MailService;
+import com.mwebster.iemail.activity.AccountShortcutPicker;
+import com.mwebster.iemail.activity.Debug;
+import com.mwebster.iemail.activity.MessageCompose;
+import com.mwebster.iemail.mail.internet.BinaryTempFileBody;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.service.BootReceiver;
+import com.mwebster.iemail.service.MailService;
 
 import android.app.Application;
 import android.content.ComponentName;

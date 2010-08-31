@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.mwebster.iemail.activity.setup;
 
-import com.android.email.Account;
-import com.android.email.AccountBackupRestore;
-import com.android.email.R;
-import com.android.email.Utility;
-import com.android.email.provider.EmailContent;
+import com.mwebster.iemail.Account;
+import com.mwebster.iemail.AccountBackupRestore;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.provider.EmailContent;
 
 import android.app.Activity;
 import android.app.AlertDialog;

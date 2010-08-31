@@ -13,10 +13,10 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.exchange.EasSyncService;
-import com.android.exchange.provider.GalResult;
+import com.mwebster.exchange.EasSyncService;
+import com.mwebster.exchange.provider.GalResult;
 
 import java.io.IOException;
 import java.io.InputStream;

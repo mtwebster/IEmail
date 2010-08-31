@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.mail.Address;
-import com.android.email.provider.EmailContent.Account;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.provider.EmailContent.Account;
 
 import android.content.ContentResolver;
 import android.content.Context;

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.mail.MessagingException;
-import com.android.email.service.EmailServiceProxy;
-import com.android.email.service.IEmailService;
-import com.android.email.service.IEmailServiceCallback;
-import com.android.exchange.CalendarSyncEnabler;
-import com.android.exchange.SyncManager;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.service.EmailServiceProxy;
+import com.mwebster.iemail.service.IEmailService;
+import com.mwebster.iemail.service.IEmailServiceCallback;
+import com.mwebster.exchange.CalendarSyncEnabler;
+import com.mwebster.exchange.SyncManager;
 
 import android.content.Context;
 import android.content.Intent;

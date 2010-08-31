@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.mwebster.iemail.service;
 
-import com.android.email.AccountBackupRestore;
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.activity.MessageList;
-import com.android.email.mail.MessagingException;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.AccountColumns;
-import com.android.email.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.AccountBackupRestore;
+import com.mwebster.iemail.Controller;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.activity.MessageList;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
 
 import android.app.AlarmManager;
 import android.app.Notification;

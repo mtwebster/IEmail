@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
-import com.android.email.activity.setup.AccountSettingsUtils.Provider;
+import com.mwebster.iemail.activity.setup.AccountSettingsUtils.Provider;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;

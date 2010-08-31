@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.internet;
+package com.mwebster.iemail.mail.internet;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -22,9 +22,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
-import com.android.email.mail.BodyPart;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Multipart;
+import com.mwebster.iemail.mail.BodyPart;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Multipart;
 
 public class MimeMultipart extends Multipart {
     protected String mPreamble;

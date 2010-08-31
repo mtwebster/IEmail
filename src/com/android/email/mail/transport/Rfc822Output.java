@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.transport;
+package com.mwebster.iemail.mail.transport;
 
-import com.android.email.mail.Address;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.internet.MimeUtility;
-import com.android.email.provider.EmailContent.Attachment;
-import com.android.email.provider.EmailContent.Body;
-import com.android.email.provider.EmailContent.Message;
+import com.mwebster.iemail.mail.Address;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.internet.MimeUtility;
+import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemail.provider.EmailContent.Body;
+import com.mwebster.iemail.provider.EmailContent.Message;
 
 import org.apache.commons.io.IOUtils;
 

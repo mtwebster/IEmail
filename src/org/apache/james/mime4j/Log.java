@@ -16,7 +16,7 @@
 
 package org.apache.james.mime4j;
 
-import com.android.email.Email;
+import com.mwebster.iemail.Email;
 
 /**
  * Empty stub for the apache logging library.

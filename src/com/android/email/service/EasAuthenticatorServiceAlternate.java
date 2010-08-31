@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.mwebster.iemail.service;
 
 /**
  * {@link EasAuthenticatorService} used with the alternative label.

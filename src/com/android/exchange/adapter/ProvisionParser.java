@@ -13,11 +13,11 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.mwebster.exchange.adapter;
 
-import com.android.email.SecurityPolicy;
-import com.android.email.SecurityPolicy.PolicySet;
-import com.android.exchange.EasSyncService;
+import com.mwebster.iemail.SecurityPolicy;
+import com.mwebster.iemail.SecurityPolicy.PolicySet;
+import com.mwebster.exchange.EasSyncService;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

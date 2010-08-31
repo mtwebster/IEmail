@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.internet;
+package com.mwebster.iemail.mail.internet;
 
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Multipart;
-import com.android.email.mail.Part;
-import com.android.email.mail.store.LocalStore.LocalAttachmentBodyPart;
-import com.android.email.provider.AttachmentProvider;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Multipart;
+import com.mwebster.iemail.mail.Part;
+import com.mwebster.iemail.mail.store.LocalStore.LocalAttachmentBodyPart;
+import com.mwebster.iemail.provider.AttachmentProvider;
 
 import android.content.ContentResolver;
 import android.net.Uri;

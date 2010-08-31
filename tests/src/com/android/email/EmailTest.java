@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.mwebster.iemail;
 
 import junit.framework.TestCase;
 

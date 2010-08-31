@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.exchange.provider;
+package com.mwebster.exchange.provider;
 
-import com.android.exchange.EasSyncService;
-import com.android.exchange.provider.GalResult.GalData;
+import com.mwebster.exchange.EasSyncService;
+import com.mwebster.exchange.provider.GalResult.GalData;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;

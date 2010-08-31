@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.mwebster.iemail.activity.setup;
 
-import com.android.email.AccountBackupRestore;
-import com.android.email.Email;
-import com.android.email.EmailAddressValidator;
-import com.android.email.R;
-import com.android.email.Utility;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.activity.Debug;
-import com.android.email.activity.MessageList;
-import com.android.email.activity.setup.AccountSettingsUtils.Provider;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.AccountBackupRestore;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.EmailAddressValidator;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.Utility;
+import com.mwebster.iemail.VendorPolicyLoader;
+import com.mwebster.iemail.activity.Debug;
+import com.mwebster.iemail.activity.MessageList;
+import com.mwebster.iemail.activity.setup.AccountSettingsUtils.Provider;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
 
 import android.app.Activity;
 import android.app.AlertDialog;

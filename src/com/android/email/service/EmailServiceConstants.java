@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.mwebster.iemail.service;
 
 public class EmailServiceConstants {
     public static final int MEETING_REQUEST_ACCEPTED = 1;

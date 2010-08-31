@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.mwebster.iemail.mail.store;
 
-import com.android.email.Email;
-import com.android.email.ExchangeUtils;
-import com.android.email.mail.AuthenticationFailedException;
-import com.android.email.mail.Folder;
-import com.android.email.mail.MessagingException;
-import com.android.email.mail.Store;
-import com.android.email.mail.StoreSynchronizer;
-import com.android.email.provider.EmailContent.Account;
-import com.android.email.service.EasAuthenticatorService;
+import com.mwebster.iemail.Email;
+import com.mwebster.iemail.ExchangeUtils;
+import com.mwebster.iemail.mail.AuthenticationFailedException;
+import com.mwebster.iemail.mail.Folder;
+import com.mwebster.iemail.mail.MessagingException;
+import com.mwebster.iemail.mail.Store;
+import com.mwebster.iemail.mail.StoreSynchronizer;
+import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemail.service.EasAuthenticatorService;
 
 import android.accounts.AccountManager;
 import android.accounts.AccountManagerCallback;

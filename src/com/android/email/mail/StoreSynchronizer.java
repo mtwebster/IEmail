@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.mwebster.iemail.mail;
 
-import com.android.email.MessagingListener;
-import com.android.email.provider.EmailContent;
-import com.android.email.GroupMessagingListener;
+import com.mwebster.iemail.MessagingListener;
+import com.mwebster.iemail.provider.EmailContent;
+import com.mwebster.iemail.GroupMessagingListener;
 
 import android.content.Context;
 

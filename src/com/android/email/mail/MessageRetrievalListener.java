@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.mwebster.iemail.mail;
 
 public interface MessageRetrievalListener {
     public void messageStarted(String uid, int number, int ofTotal);
