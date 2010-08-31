@@ -32,7 +32,7 @@ import android.os.Bundle;
  * solely to provide GAL (Global Address Lookup) service to email address adapters
  */
 public class ExchangeProvider extends ContentProvider {
-    public static final String EXCHANGE_AUTHORITY = "com.android.exchange.provider";
+    public static final String EXCHANGE_AUTHORITY = "com.mwebster.exchange.provider";
     public static final Uri GAL_URI = Uri.parse("content://" + EXCHANGE_AUTHORITY + "/gal/");
 
     private static final int GAL_BASE = 0;
@@ -43,7 +43,7 @@ public class ExchangeProvider extends ContentProvider {
     public static final int GAL_COLUMN_DISPLAYNAME = 1;
     public static final int GAL_COLUMN_DATA = 2;
 
-    public static final String EXTRAS_TOTAL_RESULTS = "com.android.exchange.provider.TOTAL_RESULTS";
+    public static final String EXTRAS_TOTAL_RESULTS = "com.mwebster.exchange.provider.TOTAL_RESULTS";
 
     private static final UriMatcher sURIMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 

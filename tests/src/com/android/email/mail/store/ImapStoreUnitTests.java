@@ -48,7 +48,7 @@ import java.util.Locale;
  * complete - no server(s) required.
  *
  * To run these tests alone, use:
- *   $ runtest -c com.android.email.mail.store.ImapStoreUnitTests email
+ *   $ runtest -c com.mwebster.iemail.mail.store.ImapStoreUnitTests email
  */
 @SmallTest
 public class ImapStoreUnitTests extends AndroidTestCase {

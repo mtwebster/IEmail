@@ -149,7 +149,7 @@ public class Email extends Application {
      */
     private static boolean sAccountsChangedNotification = false;
 
-    public static final String EXCHANGE_ACCOUNT_MANAGER_TYPE = "com.android.exchange";
+    public static final String EXCHANGE_ACCOUNT_MANAGER_TYPE = "com.mwebster.exchange";
 
     // The color chip resources and the RGB color values in the array below must be kept in sync
     private static final int[] ACCOUNT_COLOR_CHIP_RES_IDS = new int[] {

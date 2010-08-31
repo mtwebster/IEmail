@@ -37,7 +37,7 @@ public class VendorPolicyLoaderTest extends AndroidTestCase {
     public void testIsSystemPackage() {
         final Context c = getContext();
         assertEquals(false, VendorPolicyLoader.isSystemPackage(c, "no.such.package"));
-        assertEquals(false, VendorPolicyLoader.isSystemPackage(c, "com.android.email.tests"));
+        assertEquals(false, VendorPolicyLoader.isSystemPackage(c, "com.mwebster.iemail.tests"));
         assertEquals(true, VendorPolicyLoader.isSystemPackage(c, "com.android.settings"));
     }
 
@@ -76,7 +76,7 @@ public class VendorPolicyLoaderTest extends AndroidTestCase {
      * where we have a non-system vendor policy installed, which shouldn't be used.
      */
     public void testGetPolicyNonSystem() {
-        VendorPolicyLoader pl = new VendorPolicyLoader(getContext(), "com.android.email.tests",
+        VendorPolicyLoader pl = new VendorPolicyLoader(getContext(), "com.mwebster.iemail.tests",
                 MockVendorPolicy.class.getName(), false);
 
         MockVendorPolicy.passedPolicy = null;

@@ -68,7 +68,7 @@ public class AccountSettings extends PreferenceActivity {
 
     // NOTE: This string must match the one in res/xml/account_preferences.xml
     public static final String ACTION_ACCOUNT_MANAGER_ENTRY =
-        "com.android.email.activity.setup.ACCOUNT_MANAGER_ENTRY";
+        "com.mwebster.iemail.activity.setup.ACCOUNT_MANAGER_ENTRY";
     // NOTE: This constant should eventually be defined in android.accounts.Constants, but for
     // now we define it here
     private static final String ACCOUNT_MANAGER_EXTRA_ACCOUNT = "account";

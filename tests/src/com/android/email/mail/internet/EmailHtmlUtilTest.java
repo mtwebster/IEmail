@@ -38,7 +38,7 @@ import java.io.IOException;
  * Tests of the Email HTML utils.
  * 
  * You can run this entire test case with:
- *   runtest -c com.android.email.mail.internet.EmailHtmlUtilTest email
+ *   runtest -c com.mwebster.iemail.mail.internet.EmailHtmlUtilTest email
  */
 @MediumTest
 public class EmailHtmlUtilTest extends AndroidTestCase {

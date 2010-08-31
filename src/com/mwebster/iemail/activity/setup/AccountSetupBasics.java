@@ -62,25 +62,25 @@ public class AccountSetupBasics extends Activity
         implements OnClickListener, TextWatcher {
     private final static boolean ENTER_DEBUG_SCREEN = true;
 
-    private final static String EXTRA_ACCOUNT = "com.android.email.AccountSetupBasics.account";
-    public final static String EXTRA_EAS_FLOW = "com.android.email.extra.eas_flow";
+    private final static String EXTRA_ACCOUNT = "com.mwebster.iemail.AccountSetupBasics.account";
+    public final static String EXTRA_EAS_FLOW = "com.mwebster.iemail.extra.eas_flow";
 
     // Action asking us to return to our original caller (i.e. finish)
     private static final String ACTION_RETURN_TO_CALLER =
-        "com.android.email.AccountSetupBasics.return";
+        "com.mwebster.iemail.AccountSetupBasics.return";
     // Action asking us to restart the task from the Welcome activity (which will figure out the
     // right place to go) and finish
     private static final String ACTION_START_AT_MESSAGE_LIST =
-        "com.android.email.AccountSetupBasics.messageList";
+        "com.mwebster.iemail.AccountSetupBasics.messageList";
 
-    private final static String EXTRA_USERNAME = "com.android.email.AccountSetupBasics.username";
-    private final static String EXTRA_PASSWORD = "com.android.email.AccountSetupBasics.password";
+    private final static String EXTRA_USERNAME = "com.mwebster.iemail.AccountSetupBasics.username";
+    private final static String EXTRA_PASSWORD = "com.mwebster.iemail.AccountSetupBasics.password";
 
     private final static int DIALOG_NOTE = 1;
     private final static int DIALOG_DUPLICATE_ACCOUNT = 2;
 
     private final static String STATE_KEY_PROVIDER =
-        "com.android.email.AccountSetupBasics.provider";
+        "com.mwebster.iemail.AccountSetupBasics.provider";
 
     // NOTE: If you change this value, confirm that the new interval exists in arrays.xml
     private final static int DEFAULT_ACCOUNT_CHECK_INTERVAL = 15;

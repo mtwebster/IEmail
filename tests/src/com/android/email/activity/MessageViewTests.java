@@ -49,8 +49,8 @@ public class MessageViewTests
         extends ActivityInstrumentationTestCase2<MessageView> {
     
     // copied from MessageView (could be package class)
-    private static final String EXTRA_MESSAGE_ID = "com.android.email.MessageView_message_id";
-    private static final String EXTRA_MAILBOX_ID = "com.android.email.MessageView_mailbox_id";
+    private static final String EXTRA_MESSAGE_ID = "com.mwebster.iemail.MessageView_message_id";
+    private static final String EXTRA_MAILBOX_ID = "com.mwebster.iemail.MessageView_mailbox_id";
 
     private TextView mToView;
     private TextView mSubjectView;

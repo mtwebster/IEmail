@@ -42,7 +42,7 @@ import java.io.OutputStream;
  * complete - no server(s) required.
  *
  * These tests can be run with the following command:
- *   runtest -c com.android.email.mail.transport.SmtpSenderUnitTests email
+ *   runtest -c com.mwebster.iemail.mail.transport.SmtpSenderUnitTests email
  */
 @SmallTest
 public class SmtpSenderUnitTests extends ProviderTestCase2<EmailProvider> {
@@ -365,7 +365,7 @@ public class SmtpSenderUnitTests extends ProviderTestCase2<EmailProvider> {
         attachment.mMimeType = "image/jpg";
         attachment.mSize = 0;
         attachment.mContentId = null;
-        attachment.mContentUri = "content://com.android.email/1/1";
+        attachment.mContentUri = "content://com.mwebster.iemail/1/1";
         attachment.mMessageKey = messageId;
         attachment.mLocation = null;
         attachment.mEncoding = null;

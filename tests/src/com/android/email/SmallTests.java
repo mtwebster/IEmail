@@ -27,8 +27,8 @@ import android.test.suitebuilder.TestSuiteBuilder;
  *
  * To run just this suite from the command line:
  * $ adb shell am instrument -w \
- *   -e class com.android.email.UnitTests \
- *   com.android.email.tests/android.test.InstrumentationTestRunner
+ *   -e class com.mwebster.iemail.UnitTests \
+ *   com.mwebster.iemail.tests/android.test.InstrumentationTestRunner
  */
 public class SmallTests extends TestSuite {
 

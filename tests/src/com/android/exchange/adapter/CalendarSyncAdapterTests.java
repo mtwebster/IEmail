@@ -27,7 +27,7 @@ import java.util.TimeZone;
 
 /**
  * You can run this entire test case with:
- *   runtest -c com.android.exchange.adapter.CalendarSyncAdapterTests email
+ *   runtest -c com.mwebster.exchange.adapter.CalendarSyncAdapterTests email
  */
 
 public class CalendarSyncAdapterTests extends SyncAdapterTestCase<CalendarSyncAdapter> {

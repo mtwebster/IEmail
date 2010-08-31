@@ -88,9 +88,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MessageView extends Activity implements OnClickListener {
-    private static final String EXTRA_MESSAGE_ID = "com.android.email.MessageView_message_id";
-    private static final String EXTRA_MAILBOX_ID = "com.android.email.MessageView_mailbox_id";
-    /* package */ static final String EXTRA_DISABLE_REPLY = "com.android.email.MessageView_disable_reply";
+    private static final String EXTRA_MESSAGE_ID = "com.mwebster.iemail.MessageView_message_id";
+    private static final String EXTRA_MAILBOX_ID = "com.mwebster.iemail.MessageView_mailbox_id";
+    /* package */ static final String EXTRA_DISABLE_REPLY = "com.mwebster.iemail.MessageView_disable_reply";
 
     // for saveInstanceState()
     private static final String STATE_MESSAGE_ID = "messageId";
@@ -1535,7 +1535,7 @@ public class MessageView extends Activity implements OnClickListener {
 
 //        @Override
 //        public void loadMessageForViewBodyAvailable(Account account, String folder,
-//                String uid, com.android.email.mail.Message message) {
+//                String uid, com.mwebster.iemail.mail.Message message) {
 //             MessageView.this.mOldMessage = message;
 //             try {
 //                 Part part = MimeUtility.findFirstPartByMimeType(mOldMessage, "text/html");

@@ -56,7 +56,7 @@ import java.util.HashSet;
 @MediumTest
 public class LocalStoreUnitTests extends AndroidTestCase {
     
-    public static final String DB_NAME = "com.android.email.mail.store.LocalStoreUnitTests.db";
+    public static final String DB_NAME = "com.mwebster.iemail.mail.store.LocalStoreUnitTests.db";
 
     private static final String SENDER = "sender@android.com";
     private static final String RECIPIENT_TO = "recipient-to@android.com";

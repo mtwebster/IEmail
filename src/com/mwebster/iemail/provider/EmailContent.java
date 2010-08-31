@@ -686,7 +686,7 @@ public abstract class EmailContent {
          * Override this so that we can store the Body first and link it to the Message
          * Also, attachments when we get there...
          * (non-Javadoc)
-         * @see com.android.email.provider.EmailContent#save(android.content.Context)
+         * @see com.mwebster.iemail.provider.EmailContent#save(android.content.Context)
          */
         @Override
         public Uri save(Context context) {
@@ -1274,11 +1274,11 @@ public abstract class EmailContent {
 
         /**
          * @return {@link Uri} to this {@link Account} in the
-         * {@code content://com.android.email.provider/account/UUID} format, which is safe to use
+         * {@code content://com.mwebster.iemail.provider/account/UUID} format, which is safe to use
          * for desktop shortcuts.
          *
          * <p>We don't want to store _id in shortcuts, because
-         * {@link com.android.email.AccountBackupRestore} won't preserve it.
+         * {@link com.mwebster.iemail.AccountBackupRestore} won't preserve it.
          */
         public Uri getShortcutSafeUri() {
             return getShortcutSafeUriFromUuid(mCompatibilityUuid);
@@ -1292,7 +1292,7 @@ public abstract class EmailContent {
         }
 
         /**
-         * Parse {@link Uri} in the {@code content://com.android.email.provider/account/ID} format
+         * Parse {@link Uri} in the {@code content://com.mwebster.iemail.provider/account/ID} format
          * where ID = account id (used on Eclair, Android 2.0-2.1) or UUID, and return _id of
          * the {@link Account} associated with it.
          *
@@ -1400,7 +1400,7 @@ public abstract class EmailContent {
         /*
          * Override this so that we can store the HostAuth's first and link them to the Account
          * (non-Javadoc)
-         * @see com.android.email.provider.EmailContent#save(android.content.Context)
+         * @see com.mwebster.iemail.provider.EmailContent#save(android.content.Context)
          */
         @Override
         public Uri save(Context context) {

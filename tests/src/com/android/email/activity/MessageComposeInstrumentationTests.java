@@ -99,10 +99,10 @@ public class MessageComposeInstrumentationTests
     private static final String UTF32_BODY = "\uD834\uDF01\uD834\uDF46";
 
     /** Note - these are copied from private strings in MessageCompose.  Make them package? */
-    private static final String ACTION_REPLY = "com.android.email.intent.action.REPLY";
-    private static final String ACTION_REPLY_ALL = "com.android.email.intent.action.REPLY_ALL";
-    private static final String ACTION_FORWARD = "com.android.email.intent.action.FORWARD";
-    private static final String ACTION_EDIT_DRAFT = "com.android.email.intent.action.EDIT_DRAFT";
+    private static final String ACTION_REPLY = "com.mwebster.iemail.intent.action.REPLY";
+    private static final String ACTION_REPLY_ALL = "com.mwebster.iemail.intent.action.REPLY_ALL";
+    private static final String ACTION_FORWARD = "com.mwebster.iemail.intent.action.FORWARD";
+    private static final String ACTION_EDIT_DRAFT = "com.mwebster.iemail.intent.action.EDIT_DRAFT";
 
     public MessageComposeInstrumentationTests() {
         super(MessageCompose.class);

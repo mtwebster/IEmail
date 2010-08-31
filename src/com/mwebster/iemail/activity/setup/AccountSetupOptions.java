@@ -61,7 +61,7 @@ public class AccountSetupOptions extends Activity implements OnClickListener {
     private boolean mDonePressed = false;
 
     /** Default sync window for new EAS accounts */
-    private static final int SYNC_WINDOW_EAS_DEFAULT = com.android.email.Account.SYNC_WINDOW_3_DAYS;
+    private static final int SYNC_WINDOW_EAS_DEFAULT = com.mwebster.iemail.Account.SYNC_WINDOW_3_DAYS;
 
     public static void actionOptions(Activity fromActivity, EmailContent.Account account,
             boolean makeDefault, boolean easFlowMode) {

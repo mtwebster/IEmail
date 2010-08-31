@@ -1961,27 +1961,27 @@ public class EasSyncService extends AbstractSyncService {
     private String getEmailFilter() {
         String filter = Eas.FILTER_1_WEEK;
         switch (mAccount.mSyncLookback) {
-            case com.android.email.Account.SYNC_WINDOW_1_DAY: {
+            case com.mwebster.iemail.Account.SYNC_WINDOW_1_DAY: {
                 filter = Eas.FILTER_1_DAY;
                 break;
             }
-            case com.android.email.Account.SYNC_WINDOW_3_DAYS: {
+            case com.mwebster.iemail.Account.SYNC_WINDOW_3_DAYS: {
                 filter = Eas.FILTER_3_DAYS;
                 break;
             }
-            case com.android.email.Account.SYNC_WINDOW_1_WEEK: {
+            case com.mwebster.iemail.Account.SYNC_WINDOW_1_WEEK: {
                 filter = Eas.FILTER_1_WEEK;
                 break;
             }
-            case com.android.email.Account.SYNC_WINDOW_2_WEEKS: {
+            case com.mwebster.iemail.Account.SYNC_WINDOW_2_WEEKS: {
                 filter = Eas.FILTER_2_WEEKS;
                 break;
             }
-            case com.android.email.Account.SYNC_WINDOW_1_MONTH: {
+            case com.mwebster.iemail.Account.SYNC_WINDOW_1_MONTH: {
                 filter = Eas.FILTER_1_MONTH;
                 break;
             }
-            case com.android.email.Account.SYNC_WINDOW_ALL: {
+            case com.mwebster.iemail.Account.SYNC_WINDOW_ALL: {
                 filter = Eas.FILTER_ALL;
                 break;
             }

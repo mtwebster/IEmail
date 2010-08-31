@@ -48,7 +48,7 @@ import java.util.ArrayList;
  * Tests of the Email provider.
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.provider.ProviderTests email
+ *   runtest -c com.mwebster.iemail.provider.ProviderTests email
  */
 public class ProviderTests extends ProviderTestCase2<EmailProvider> {
 

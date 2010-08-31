@@ -171,7 +171,7 @@ public class Rfc822Output {
                 }
             } else {
                 // continue with multipart headers, then into multipart body
-                multipartBoundary = "--_com.android.email_" + System.nanoTime();
+                multipartBoundary = "--_com.mwebster.iemail_" + System.nanoTime();
 
                 // Move to the first attachment; this must succeed because multipart is true
                 attachmentsCursor.moveToFirst();

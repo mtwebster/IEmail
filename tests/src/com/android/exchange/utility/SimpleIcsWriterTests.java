@@ -22,7 +22,7 @@ import junit.framework.TestCase;
 /**
  * Test for {@link SimpleIcsWriter}.
  * You can run this entire test case with:
- *   runtest -c com.android.exchange.utility.SimpleIcsWriterTests email
+ *   runtest -c com.mwebster.exchange.utility.SimpleIcsWriterTests email
  */
 public class SimpleIcsWriterTests extends TestCase {
     private static final String CRLF = "\r\n";

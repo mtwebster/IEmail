@@ -82,8 +82,8 @@ public class MimeBodyPart extends BodyPart {
 
     public void setBody(Body body) throws MessagingException {
         this.mBody = body;
-        if (body instanceof com.android.email.mail.Multipart) {
-            com.android.email.mail.Multipart multipart = ((com.android.email.mail.Multipart)body);
+        if (body instanceof com.mwebster.iemail.mail.Multipart) {
+            com.mwebster.iemail.mail.Multipart multipart = ((com.mwebster.iemail.mail.Multipart)body);
             multipart.setParent(this);
             setHeader(MimeHeader.HEADER_CONTENT_TYPE, multipart.getContentType());
         }

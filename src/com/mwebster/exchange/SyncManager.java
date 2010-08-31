@@ -1169,7 +1169,7 @@ public class SyncManager extends Service implements Runnable {
     static void checkSyncManagerServiceRunning() {
         // Get the service thread running if it isn't
         // This is a stopgap for cases in which SyncManager died (due to a crash somewhere in
-        // com.android.email) and hasn't been restarted
+        // com.mwebster.iemail) and hasn't been restarted
         // See the comment for onCreate for details
         SyncManager syncManager = INSTANCE;
         if (syncManager == null) return;

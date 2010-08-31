@@ -36,7 +36,7 @@ import java.util.Locale;
  * a true "unit test".
  * 
  * You can run this entire test case with:
- *   runtest -c com.android.email.ControllerProviderOpsTests email
+ *   runtest -c com.mwebster.iemail.ControllerProviderOpsTests email
  */
 public class ControllerProviderOpsTests extends ProviderTestCase2<EmailProvider> {
 

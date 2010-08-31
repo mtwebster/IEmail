@@ -79,23 +79,23 @@ import java.util.List;
 
 
 public class MessageCompose extends Activity implements OnClickListener, OnFocusChangeListener {
-    private static final String ACTION_REPLY = "com.android.email.intent.action.REPLY";
-    private static final String ACTION_REPLY_ALL = "com.android.email.intent.action.REPLY_ALL";
-    private static final String ACTION_FORWARD = "com.android.email.intent.action.FORWARD";
-    private static final String ACTION_EDIT_DRAFT = "com.android.email.intent.action.EDIT_DRAFT";
+    private static final String ACTION_REPLY = "com.mwebster.iemail.intent.action.REPLY";
+    private static final String ACTION_REPLY_ALL = "com.mwebster.iemail.intent.action.REPLY_ALL";
+    private static final String ACTION_FORWARD = "com.mwebster.iemail.intent.action.FORWARD";
+    private static final String ACTION_EDIT_DRAFT = "com.mwebster.iemail.intent.action.EDIT_DRAFT";
 
     private static final String EXTRA_ACCOUNT_ID = "account_id";
     private static final String EXTRA_MESSAGE_ID = "message_id";
     private static final String STATE_KEY_CC_SHOWN =
-        "com.android.email.activity.MessageCompose.ccShown";
+        "com.mwebster.iemail.activity.MessageCompose.ccShown";
     private static final String STATE_KEY_BCC_SHOWN =
-        "com.android.email.activity.MessageCompose.bccShown";
+        "com.mwebster.iemail.activity.MessageCompose.bccShown";
     private static final String STATE_KEY_QUOTED_TEXT_SHOWN =
-        "com.android.email.activity.MessageCompose.quotedTextShown";
+        "com.mwebster.iemail.activity.MessageCompose.quotedTextShown";
     private static final String STATE_KEY_SOURCE_MESSAGE_PROCED =
-        "com.android.email.activity.MessageCompose.stateKeySourceMessageProced";
+        "com.mwebster.iemail.activity.MessageCompose.stateKeySourceMessageProced";
     private static final String STATE_KEY_DRAFT_ID =
-        "com.android.email.activity.MessageCompose.draftId";
+        "com.mwebster.iemail.activity.MessageCompose.draftId";
 
     private static final int MSG_UPDATE_TITLE = 3;
     private static final int MSG_SKIPPED_ATTACHMENTS = 4;

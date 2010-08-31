@@ -55,8 +55,8 @@ public class EmailProvider extends ContentProvider {
 
     private static final String TAG = "EmailProvider";
 
-    protected static final String DATABASE_NAME = "EmailProvider.db";
-    protected static final String BODY_DATABASE_NAME = "EmailProviderBody.db";
+    protected static final String DATABASE_NAME = "IEmailProvider.db";
+    protected static final String BODY_DATABASE_NAME = "IEmailProviderBody.db";
 
     public static final Uri INTEGRITY_CHECK_URI =
         Uri.parse("content://" + EmailContent.AUTHORITY + "/integrityCheck");
@@ -91,7 +91,7 @@ public class EmailProvider extends ContentProvider {
     // Version 6: Adding Body.mIntroText column
     public static final int BODY_DATABASE_VERSION = 6;
 
-    public static final String EMAIL_AUTHORITY = "com.android.email.provider";
+    public static final String EMAIL_AUTHORITY = "com.mwebster.iemail.provider";
 
     private static final int ACCOUNT_BASE = 0;
     private static final int ACCOUNT = ACCOUNT_BASE;

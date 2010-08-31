@@ -45,11 +45,11 @@ import java.util.Set;
 public class MessageListUnitTests
         extends ActivityInstrumentationTestCase2<MessageList> {
 
-    private static final String EXTRA_ACCOUNT_ID = "com.android.email.activity._ACCOUNT_ID";
-    private static final String EXTRA_MAILBOX_TYPE = "com.android.email.activity.MAILBOX_TYPE";
-    private static final String EXTRA_MAILBOX_ID = "com.android.email.activity.MAILBOX_ID";
+    private static final String EXTRA_ACCOUNT_ID = "com.mwebster.iemail.activity._ACCOUNT_ID";
+    private static final String EXTRA_MAILBOX_TYPE = "com.mwebster.iemail.activity.MAILBOX_TYPE";
+    private static final String EXTRA_MAILBOX_ID = "com.mwebster.iemail.activity.MAILBOX_ID";
     private static final String STATE_CHECKED_ITEMS =
-        "com.android.email.activity.MessageList.checkedItems";
+        "com.mwebster.iemail.activity.MessageList.checkedItems";
     private Context mContext;
     private MessageList mMessageList;
     private CursorAdapter mListAdapter;

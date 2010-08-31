@@ -121,7 +121,7 @@ public abstract class Sender {
      */
     public Class<? extends android.app.Activity> getSettingActivityClass() {
         // default SettingActivity class
-        return com.android.email.activity.setup.AccountSetupOutgoing.class;
+        return com.mwebster.iemail.activity.setup.AccountSetupOutgoing.class;
     }
 
     public abstract void open() throws MessagingException;

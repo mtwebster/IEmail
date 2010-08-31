@@ -208,7 +208,7 @@ public abstract class Store {
      */
     public Class<? extends android.app.Activity> getSettingActivityClass() {
         // default SettingActivity class
-        return com.android.email.activity.setup.AccountSetupIncoming.class;
+        return com.mwebster.iemail.activity.setup.AccountSetupIncoming.class;
     }
     
     /**

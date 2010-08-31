@@ -35,7 +35,7 @@ import android.test.suitebuilder.annotation.SmallTest;
  * This is a series of unit tests for backup/restore of the SecurityPolicy class.
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.SecurityPolicyTests email
+ *   runtest -c com.mwebster.iemail.SecurityPolicyTests email
 */
 @MediumTest
 public class SecurityPolicyTests extends ProviderTestCase2<EmailProvider> {

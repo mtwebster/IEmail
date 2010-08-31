@@ -35,7 +35,7 @@ import java.util.HashMap;
 
 /**
  * You can run this entire test case with:
- *   runtest -c com.android.exchange.SyncManagerAccountTests email
+ *   runtest -c com.mwebster.exchange.SyncManagerAccountTests email
  */
 public class SyncManagerAccountTests extends AccountTestCase {
 

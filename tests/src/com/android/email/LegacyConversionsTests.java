@@ -60,7 +60,7 @@ import java.util.Date;
  * a true "unit test".
  * 
  * You can run this entire test case with:
- *   runtest -c com.android.email.LegacyConversionsTests email
+ *   runtest -c com.mwebster.iemail.LegacyConversionsTests email
  */
 public class LegacyConversionsTests extends ProviderTestCase2<EmailProvider> {
 

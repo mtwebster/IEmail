@@ -48,10 +48,10 @@ import java.util.List;
  * A simple ContentProvider that allows file access to Email's attachments.
  * 
  * The URI scheme is as follows.  For raw file access:
- *   content://com.android.email.attachmentprovider/acct#/attach#/RAW
+ *   content://com.mwebster.iemail.attachmentprovider/acct#/attach#/RAW
  * 
  * And for access to thumbnails:
- *   content://com.android.email.attachmentprovider/acct#/attach#/THUMBNAIL/width#/height#
+ *   content://com.mwebster.iemail.attachmentprovider/acct#/attach#/THUMBNAIL/width#/height#
  *
  * The on-disk (storage) schema is as follows.
  * 
@@ -59,12 +59,12 @@ import java.util.List;
  * Thumbnails are stored at:   <cache-path>/thmb_account#_item#
  * 
  * Using the standard application context, account #10 and attachment # 20, this would be:
- *      /data/data/com.android.email/databases/10.db_att/20
- *      /data/data/com.android.email/cache/thmb_10_20
+ *      /data/data/com.mwebster.iemail/databases/10.db_att/20
+ *      /data/data/com.mwebster.iemail/cache/thmb_10_20
  */
 public class AttachmentProvider extends ContentProvider {
 
-    public static final String AUTHORITY = "com.android.email.attachmentprovider";
+    public static final String AUTHORITY = "com.mwebster.iemail.attachmentprovider";
     public static final Uri CONTENT_URI = Uri.parse( "content://" + AUTHORITY);
 
     private static final String FORMAT_RAW = "RAW";

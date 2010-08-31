@@ -31,7 +31,7 @@ import java.io.IOException;
 
 /**
  * You can run this entire test case with:
- * runtest -c com.android.exchange.EasSyncServiceTests email
+ * runtest -c com.mwebster.exchange.EasSyncServiceTests email
  */
  public class EasSyncServiceTests extends AndroidTestCase {
     Context mMockContext;

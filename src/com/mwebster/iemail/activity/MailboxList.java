@@ -68,7 +68,7 @@ import android.widget.AdapterView.OnItemClickListener;
 public class MailboxList extends ListActivity implements OnItemClickListener, OnClickListener {
 
     // Intent extras (internal to this activity)
-    private static final String EXTRA_ACCOUNT_ID = "com.android.email.activity._ACCOUNT_ID";
+    private static final String EXTRA_ACCOUNT_ID = "com.mwebster.iemail.activity._ACCOUNT_ID";
 
     private static final String MAILBOX_SELECTION = MailboxColumns.ACCOUNT_KEY + "=?"
         + " AND " + MailboxColumns.TYPE + "<" + Mailbox.TYPE_NOT_EMAIL

@@ -82,7 +82,7 @@ public class AccountFolderList extends ListActivity implements OnItemClickListen
     };
     private int mSecretKeyCodeIndex = 0;
 
-    private static final String ICICLE_SELECTED_ACCOUNT = "com.android.email.selectedAccount";
+    private static final String ICICLE_SELECTED_ACCOUNT = "com.mwebster.iemail.selectedAccount";
     private EmailContent.Account mSelectedContextAccount;
 
     private ListView mListView;

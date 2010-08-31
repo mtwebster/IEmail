@@ -15,9 +15,9 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.email">
+    package="com.mwebster.iemail">
 
-    <original-package android:name="com.android.email" />
+    <original-package android:name="com.mwebster.iemail" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
@@ -42,19 +42,19 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <!-- Grant permission to other apps to view attachments -->
-    <permission android:name="com.android.email.permission.READ_ATTACHMENT"
+    <permission android:name="com.mwebster.iemail.permission.READ_ATTACHMENT"
                 android:permissionGroup="android.permission-group.MESSAGES"
                 android:protectionLevel="dangerous"
                 android:label="@string/read_attachment_label"
                 android:description="@string/read_attachment_desc"/>
-    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT"/>
+    <uses-permission android:name="com.mwebster.iemail.permission.READ_ATTACHMENT"/>
 
     <!-- Grant permission to system apps to access provider (see provider below) -->
-    <permission android:name="com.android.email.permission.ACCESS_PROVIDER"
+    <permission android:name="com.mwebster.iemail.permission.ACCESS_PROVIDER"
                 android:protectionLevel="signatureOrSystem"
                 android:label="@string/permission_access_provider_label"
                 android:description="@string/permission_access_provider_desc"/>
-    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.mwebster.iemail.permission.ACCESS_PROVIDER"/>
 
     <application android:icon="@drawable/icon" android:label="@string/app_name"
         android:name="Email">
@@ -127,7 +127,7 @@
             android:label="@string/account_settings_action"
             >
             <intent-filter>
-                <action android:name="com.android.email.activity.setup.ACCOUNT_MANAGER_ENTRY" />
+                <action android:name="com.mwebster.iemail.activity.setup.ACCOUNT_MANAGER_ENTRY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -216,9 +216,9 @@
             </intent-filter>
         </activity>
         <!--EXCHANGE-REMOVE-SECTION-START-->
-       <receiver android:name="com.android.exchange.EmailSyncAlarmReceiver"/>
-       <receiver android:name="com.android.exchange.MailboxAlarmReceiver"/>
-       <receiver android:name="com.android.exchange.BootReceiver" android:enabled="true">
+       <receiver android:name="com.mwebster.exchange.EmailSyncAlarmReceiver"/>
+       <receiver android:name="com.mwebster.exchange.MailboxAlarmReceiver"/>
+       <receiver android:name="com.mwebster.exchange.BootReceiver" android:enabled="true">
              <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -269,7 +269,7 @@
         <!--EXCHANGE-REMOVE-SECTION-START-->
         <!--Required stanza to register the ContactsSyncAdapterService with SyncManager -->
         <service 
-            android:name="com.android.exchange.ContactsSyncAdapterService" 
+            android:name="com.mwebster.exchange.ContactsSyncAdapterService" 
         	android:exported="true">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
@@ -280,7 +280,7 @@
 
         <!--Required stanza to register the CalendarSyncAdapterService with SyncManager -->
         <service
-            android:name="com.android.exchange.CalendarSyncAdapterService"
+            android:name="com.mwebster.exchange.CalendarSyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
@@ -291,7 +291,7 @@
 
         <!-- Add android:process=":remote" below to enable SyncManager as a separate process -->
         <service
-            android:name="com.android.exchange.SyncManager"
+            android:name="com.mwebster.exchange.SyncManager"
             android:enabled="true"
             >
         </service>
@@ -331,29 +331,29 @@
 
         <provider
             android:name=".provider.AttachmentProvider"
-            android:authorities="com.android.email.attachmentprovider"
+            android:authorities="com.mwebster.iemail.attachmentprovider"
             android:multiprocess="true"
             android:grantUriPermissions="true"
-            android:readPermission="com.android.email.permission.READ_ATTACHMENT"
+            android:readPermission="com.mwebster.iemail.permission.READ_ATTACHMENT"
             />
 
         <!-- This provider MUST be protected by strict permissions, as granting access to
              it exposes user passwords and other confidential information. -->
         <provider
             android:name=".provider.EmailProvider"
-            android:authorities="com.android.email.provider"
+            android:authorities="com.mwebster.iemail.provider"
             android:multiprocess="true"
-            android:permission="com.android.email.permission.ACCESS_PROVIDER"
+            android:permission="com.mwebster.iemail.permission.ACCESS_PROVIDER"
             />
 
         <!--EXCHANGE-REMOVE-SECTION-START-->
         <!-- In this release, GAL information is used locally only, so we used the same
              strict permissions. -->
         <provider
-            android:name="com.android.exchange.provider.ExchangeProvider"
-            android:authorities="com.android.exchange.provider"
+            android:name="com.mwebster.exchange.provider.ExchangeProvider"
+            android:authorities="com.mwebster.exchange.provider"
             android:multiprocess="true"
-            android:permission="com.android.email.permission.ACCESS_PROVIDER"
+            android:permission="com.mwebster.iemail.permission.ACCESS_PROVIDER"
             />
         <!--EXCHANGE-REMOVE-SECTION-END-->
 

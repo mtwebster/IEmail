@@ -80,7 +80,7 @@ public class ContactsSyncAdapter extends AbstractSyncAdapter {
     private static final ArrayList<NamedContentValues> EMPTY_ARRAY_NAMEDCONTENTVALUES
         = new ArrayList<NamedContentValues>();
 
-    private static final String FOUND_DATA_ROW = "com.android.exchange.FOUND_ROW";
+    private static final String FOUND_DATA_ROW = "com.mwebster.exchange.FOUND_ROW";
 
     private static final int[] HOME_ADDRESS_TAGS = new int[] {Tags.CONTACTS_HOME_ADDRESS_CITY,
         Tags.CONTACTS_HOME_ADDRESS_COUNTRY,
@@ -171,7 +171,7 @@ public class ContactsSyncAdapter extends AbstractSyncAdapter {
                     ContentValues cv = new ContentValues();
                     cv.put(Groups.ACCOUNT_NAME, mAccount.mEmailAddress);
                     cv.put(Groups.ACCOUNT_TYPE,
-                            com.android.email.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE);
+                            com.mwebster.iemail.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE);
                     cv.put(Settings.UNGROUPED_VISIBLE, true);
                     client.insert(addCallerIsSyncAdapterParameter(Settings.CONTENT_URI), cv);
                     return "0";
@@ -892,7 +892,7 @@ public class ContactsSyncAdapter extends AbstractSyncAdapter {
         return uri.buildUpon()
             .appendQueryParameter(RawContacts.ACCOUNT_NAME, mAccount.mEmailAddress)
             .appendQueryParameter(RawContacts.ACCOUNT_TYPE,
-                    com.android.email.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE)
+                    com.mwebster.iemail.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE)
             .appendQueryParameter(ContactsContract.CALLER_IS_SYNCADAPTER, "true")
             .build();
     }
@@ -1779,7 +1779,7 @@ public class ContactsSyncAdapter extends AbstractSyncAdapter {
         Uri uri = RawContactsEntity.CONTENT_URI.buildUpon()
                 .appendQueryParameter(RawContacts.ACCOUNT_NAME, mAccount.mEmailAddress)
                 .appendQueryParameter(RawContacts.ACCOUNT_TYPE,
-                        com.android.email.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE)
+                        com.mwebster.iemail.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE)
                 .appendQueryParameter(ContactsContract.CALLER_IS_SYNCADAPTER, "true")
                 .build();
 

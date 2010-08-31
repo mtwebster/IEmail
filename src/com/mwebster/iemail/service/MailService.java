@@ -59,18 +59,18 @@ public class MailService extends Service {
     public static int NOTIFICATION_ID_EXCHANGE_CALENDAR_ADDED = 3;
 
     private static final String ACTION_CHECK_MAIL =
-        "com.android.email.intent.action.MAIL_SERVICE_WAKEUP";
+        "com.mwebster.iemail.intent.action.MAIL_SERVICE_WAKEUP";
     private static final String ACTION_RESCHEDULE =
-        "com.android.email.intent.action.MAIL_SERVICE_RESCHEDULE";
+        "com.mwebster.iemail.intent.action.MAIL_SERVICE_RESCHEDULE";
     private static final String ACTION_CANCEL =
-        "com.android.email.intent.action.MAIL_SERVICE_CANCEL";
+        "com.mwebster.iemail.intent.action.MAIL_SERVICE_CANCEL";
     private static final String ACTION_NOTIFY_MAIL =
-        "com.android.email.intent.action.MAIL_SERVICE_NOTIFY";
+        "com.mwebster.iemail.intent.action.MAIL_SERVICE_NOTIFY";
 
-    private static final String EXTRA_CHECK_ACCOUNT = "com.android.email.intent.extra.ACCOUNT";
-    private static final String EXTRA_ACCOUNT_INFO = "com.android.email.intent.extra.ACCOUNT_INFO";
-    private static final String EXTRA_DEBUG_WATCHDOG = "com.android.email.intent.extra.WATCHDOG";
-    private static final String EXTRA_MAILBOX_ID = "com.android.email.intent.extra.MAILBOX_ID";
+    private static final String EXTRA_CHECK_ACCOUNT = "com.mwebster.iemail.intent.extra.ACCOUNT";
+    private static final String EXTRA_ACCOUNT_INFO = "com.mwebster.iemail.intent.extra.ACCOUNT_INFO";
+    private static final String EXTRA_DEBUG_WATCHDOG = "com.mwebster.iemail.intent.extra.WATCHDOG";
+    private static final String EXTRA_MAILBOX_ID = "com.mwebster.iemail.intent.extra.MAILBOX_ID";
     private static final int WATCHDOG_DELAY = 10 * 60 * 1000;   // 10 minutes
     private static final int SYNC_RETRY_DELAY = 5 * 60 * 1000; // 5 minutes - if no data/wifi to sync with it will retry this often
     // instead of continuously and killing battery

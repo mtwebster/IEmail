@@ -83,15 +83,15 @@ import java.util.TimerTask;
 public class MessageList extends ListActivity implements OnItemClickListener, OnClickListener,
         AnimationListener {
     // Intent extras (internal to this activity)
-    private static final String EXTRA_ACCOUNT_ID = "com.android.email.activity._ACCOUNT_ID";
-    private static final String EXTRA_MAILBOX_TYPE = "com.android.email.activity.MAILBOX_TYPE";
-    private static final String EXTRA_MAILBOX_ID = "com.android.email.activity.MAILBOX_ID";
+    private static final String EXTRA_ACCOUNT_ID = "com.mwebster.iemail.activity._ACCOUNT_ID";
+    private static final String EXTRA_MAILBOX_TYPE = "com.mwebster.iemail.activity.MAILBOX_TYPE";
+    private static final String EXTRA_MAILBOX_ID = "com.mwebster.iemail.activity.MAILBOX_ID";
     private static final String STATE_SELECTED_ITEM_TOP =
-        "com.android.email.activity.MessageList.selectedItemTop";
+        "com.mwebster.iemail.activity.MessageList.selectedItemTop";
     private static final String STATE_SELECTED_POSITION =
-        "com.android.email.activity.MessageList.selectedPosition";
+        "com.mwebster.iemail.activity.MessageList.selectedPosition";
     private static final String STATE_CHECKED_ITEMS =
-        "com.android.email.activity.MessageList.checkedItems";
+        "com.mwebster.iemail.activity.MessageList.checkedItems";
 
     private static final int REQUEST_SECURITY = 0;
 

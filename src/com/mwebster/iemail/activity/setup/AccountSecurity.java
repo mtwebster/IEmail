@@ -38,7 +38,7 @@ import android.os.Bundle;
  */
 public class AccountSecurity extends Activity {
 
-    private static final String EXTRA_ACCOUNT_ID = "com.android.email.activity.setup.ACCOUNT_ID";
+    private static final String EXTRA_ACCOUNT_ID = "com.mwebster.iemail.activity.setup.ACCOUNT_ID";
 
     private static final int REQUEST_ENABLE = 1;
 

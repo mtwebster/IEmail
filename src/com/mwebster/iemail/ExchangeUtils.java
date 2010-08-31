@@ -72,7 +72,7 @@ public class ExchangeUtils {
 
     /**
      * An empty {@link IEmailService} implementation which is used instead of
-     * {@link com.android.exchange.SyncManager} on the build with no exchange support.
+     * {@link com.mwebster.exchange.SyncManager} on the build with no exchange support.
      *
      * <p>In theory, the service in question isn't used on the no-exchange-support build,
      * because we won't have any exchange accounts in that case, so we wouldn't have to have this

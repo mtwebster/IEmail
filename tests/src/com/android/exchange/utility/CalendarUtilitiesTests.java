@@ -45,7 +45,7 @@ import java.util.TimeZone;
 /**
  * Tests of EAS Calendar Utilities
  * You can run this entire test case with:
- *   runtest -c com.android.exchange.utility.CalendarUtilitiesTests email
+ *   runtest -c com.mwebster.exchange.utility.CalendarUtilitiesTests email
  *
  * Please see RFC2445 for RRULE definition
  * http://www.ietf.org/rfc/rfc2445.txt

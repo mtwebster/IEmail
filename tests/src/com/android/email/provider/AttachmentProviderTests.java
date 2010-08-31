@@ -46,7 +46,7 @@ import java.io.IOException;
  * Tests of the Email Attachments provider.
  * 
  * You can run this entire test case with:
- *   runtest -c com.android.email.provider.AttachmentProviderTests email
+ *   runtest -c com.mwebster.iemail.provider.AttachmentProviderTests email
  */
 public class AttachmentProviderTests extends ProviderTestCase2<AttachmentProvider> {
 

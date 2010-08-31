@@ -126,7 +126,7 @@ public class ExchangeStore extends Store {
      */
     @Override
     public Class<? extends android.app.Activity> getSettingActivityClass() {
-        return com.android.email.activity.setup.AccountSetupExchange.class;
+        return com.mwebster.iemail.activity.setup.AccountSetupExchange.class;
     }
 
     /**

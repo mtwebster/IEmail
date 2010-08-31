@@ -26,7 +26,7 @@ LOCAL_SRC_FILES += \
 
 LOCAL_JAVA_STATIC_LIBRARIES := android-common
 
-LOCAL_PACKAGE_NAME := Email
+LOCAL_PACKAGE_NAME := IEmail
 
 LOCAL_PROGUARD_FLAGS := -include $(LOCAL_PATH)/proguard.flags
 
