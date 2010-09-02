@@ -68,6 +68,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CursorAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -105,6 +106,7 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
     private TextView mListFooterText;
     private View mListFooterProgress;
     private TextView mErrorBanner;
+    
 
     private static final int LIST_FOOTER_MODE_NONE = 0;
     private static final int LIST_FOOTER_MODE_REFRESH = 1;
@@ -117,7 +119,7 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
     private final Controller mController = Controller.getInstance(getApplication());
     private ControllerResults mControllerCallback;
 
-    private TextView mLeftTitle;
+    private Button mLeftTitle;
     private ProgressBar mProgressIcon;
 
     // DB access
@@ -244,10 +246,11 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
         mReadUnreadButton = (Button) findViewById(R.id.btn_read_unread);
         mFavoriteButton = (Button) findViewById(R.id.btn_multi_favorite);
         mDeleteButton = (Button) findViewById(R.id.btn_multi_delete);
-        mLeftTitle = (TextView) findViewById(R.id.title_left_text);
+        mLeftTitle = (Button) findViewById(R.id.title_left_text);
         mProgressIcon = (ProgressBar) findViewById(R.id.title_progress_icon);
         mErrorBanner = (TextView) findViewById(R.id.connection_error_text);
-
+        
+        mLeftTitle.setOnClickListener(this);
         mReadUnreadButton.setOnClickListener(this);
         mFavoriteButton.setOnClickListener(this);
         mDeleteButton.setOnClickListener(this);
@@ -418,6 +421,9 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
             case R.id.account_title_button:
                 onAccounts();
                 break;
+            case R.id.title_left_text:
+            	onFolders();
+            	break;
         }
     }
 

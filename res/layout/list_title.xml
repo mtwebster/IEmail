@@ -23,14 +23,20 @@
         android:gravity="center_vertical"
         android:background="@android:drawable/title_bar">
 
-    <TextView android:id="@+id/title_left_text"
+    <Button android:id="@+id/title_left_text"
             android:gravity="center_vertical|left"
             android:ellipsize="end"
             android:singleLine="true"
-            style="?android:attr/windowTitleStyle"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:layout_margin="3dip"
+            android:textColor="#ffffffff"
+            android:paddingTop="0dip"
+            android:paddingBottom="0dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:background="@drawable/one_pixel_border_button" /> 
 
     <TextView android:id="@+id/title_right_text"
             android:gravity="center_vertical|right"
