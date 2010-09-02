@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail;
+package com.mwebster.iemaildon.mail;
 
 import junit.framework.TestCase;
 
@@ -22,7 +22,7 @@ import junit.framework.TestCase;
  * Tests of PackedString
  *
  * You can run this entire test case with:
- *   runtest -c com.mwebster.iemail.mail.PackedStringTests email
+ *   runtest -c com.mwebster.iemaildon.mail.PackedStringTests email
  */
 public class PackedStringTests extends TestCase {
     /** Note: copied from actual class */

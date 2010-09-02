@@ -17,16 +17,16 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.transport.Rfc822Output;
-import com.mwebster.iemail.provider.EmailContent.Body;
-import com.mwebster.iemail.provider.EmailContent.BodyColumns;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
-import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
-import com.mwebster.iemail.provider.EmailContent.Message;
-import com.mwebster.iemail.provider.EmailContent.MessageColumns;
-import com.mwebster.iemail.provider.EmailContent.SyncColumns;
-import com.mwebster.iemail.service.EmailServiceStatus;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.transport.Rfc822Output;
+import com.mwebster.iemaildon.provider.EmailContent.Body;
+import com.mwebster.iemaildon.provider.EmailContent.BodyColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
+import com.mwebster.iemaildon.provider.EmailContent.MessageColumns;
+import com.mwebster.iemaildon.provider.EmailContent.SyncColumns;
+import com.mwebster.iemaildon.service.EmailServiceStatus;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;

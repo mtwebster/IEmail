@@ -16,9 +16,9 @@
 
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.iemail.provider.EmailProvider;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailProvider;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
 import com.mwebster.exchange.EasSyncService;
 import com.mwebster.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser;
 

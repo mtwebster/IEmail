@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.provider;
+package com.mwebster.iemaildon.provider;
 
-import com.mwebster.iemail.Utility;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.Attachment;
-import com.mwebster.iemail.provider.EmailContent.HostAuth;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
-import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemaildon.Utility;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.Attachment;
+import com.mwebster.iemaildon.provider.EmailContent.HostAuth;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
 
 import android.content.Context;
 import android.test.MoreAsserts;

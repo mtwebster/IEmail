@@ -23,7 +23,7 @@ set -e # fail fast
 
 # Step 0. Make sure we're in the right directory, and the user really wants it.
 
-if [[ ! -d src/com.mwebster.iemail/ ]] ; then
+if [[ ! -d src/com.mwebster.iemaildon/ ]] ; then
   echo "Run the script in the root of the email source tree." 1>&2
   exit 1
 fi

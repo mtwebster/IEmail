@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.internet;
+package com.mwebster.iemaildon.mail.internet;
 
 import android.test.suitebuilder.annotation.SmallTest;
 

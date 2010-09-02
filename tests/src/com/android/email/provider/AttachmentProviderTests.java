@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.provider;
+package com.mwebster.iemaildon.provider;
 
-import com.mwebster.iemail.R;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.store.LocalStore;
-import com.mwebster.iemail.provider.AttachmentProvider.AttachmentProviderColumns;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.Attachment;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
-import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemaildon.R;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.store.LocalStore;
+import com.mwebster.iemaildon.provider.AttachmentProvider.AttachmentProviderColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.Attachment;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -46,7 +46,7 @@ import java.io.IOException;
  * Tests of the Email Attachments provider.
  * 
  * You can run this entire test case with:
- *   runtest -c com.mwebster.iemail.provider.AttachmentProviderTests email
+ *   runtest -c com.mwebster.iemaildon.provider.AttachmentProviderTests email
  */
 public class AttachmentProviderTests extends ProviderTestCase2<AttachmentProvider> {
 

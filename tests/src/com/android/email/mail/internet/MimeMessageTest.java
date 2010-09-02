@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.internet;
+package com.mwebster.iemaildon.mail.internet;
 
-import com.mwebster.iemail.mail.Address;
-import com.mwebster.iemail.mail.Flag;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.Message.RecipientType;
+import com.mwebster.iemaildon.mail.Address;
+import com.mwebster.iemaildon.mail.Flag;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.Message.RecipientType;
 
 import android.test.suitebuilder.annotation.SmallTest;
 import android.test.suitebuilder.annotation.MediumTest;

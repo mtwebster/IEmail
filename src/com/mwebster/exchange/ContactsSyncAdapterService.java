@@ -16,11 +16,11 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.iemail.Email;
-import com.mwebster.iemail.provider.EmailContent;
-import com.mwebster.iemail.provider.EmailContent.AccountColumns;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
-import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemaildon.Email;
+import com.mwebster.iemaildon.provider.EmailContent;
+import com.mwebster.iemaildon.provider.EmailContent.AccountColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.MailboxColumns;
 
 import android.accounts.Account;
 import android.accounts.OperationCanceledException;
@@ -115,7 +115,7 @@ public class ContactsSyncAdapterService extends Service {
 
         // Find the (EmailProvider) account associated with this email address
         Cursor accountCursor =
-            cr.query(com.mwebster.iemail.provider.EmailContent.Account.CONTENT_URI, ID_PROJECTION,
+            cr.query(com.mwebster.iemaildon.provider.EmailContent.Account.CONTENT_URI, ID_PROJECTION,
                 AccountColumns.EMAIL_ADDRESS + "=?", new String[] {account.name}, null);
         try {
             if (accountCursor.moveToFirst()) {

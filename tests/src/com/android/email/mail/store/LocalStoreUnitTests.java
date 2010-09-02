@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.store;
+package com.mwebster.iemaildon.mail.store;
 
-import com.mwebster.iemail.Email;
-import com.mwebster.iemail.mail.Address;
-import com.mwebster.iemail.mail.Body;
-import com.mwebster.iemail.mail.FetchProfile;
-import com.mwebster.iemail.mail.Flag;
-import com.mwebster.iemail.mail.Folder;
-import com.mwebster.iemail.mail.Message;
-import com.mwebster.iemail.mail.MessageTestUtils;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.Part;
-import com.mwebster.iemail.mail.Store;
-import com.mwebster.iemail.mail.Folder.FolderType;
-import com.mwebster.iemail.mail.Folder.OpenMode;
-import com.mwebster.iemail.mail.Message.RecipientType;
-import com.mwebster.iemail.mail.MessageTestUtils.MultipartBuilder;
-import com.mwebster.iemail.mail.internet.BinaryTempFileBody;
-import com.mwebster.iemail.mail.internet.MimeMessage;
-import com.mwebster.iemail.mail.internet.MimeUtility;
-import com.mwebster.iemail.mail.internet.TextBody;
-import com.mwebster.iemail.mail.store.LocalStore.LocalMessage;
+import com.mwebster.iemaildon.Email;
+import com.mwebster.iemaildon.mail.Address;
+import com.mwebster.iemaildon.mail.Body;
+import com.mwebster.iemaildon.mail.FetchProfile;
+import com.mwebster.iemaildon.mail.Flag;
+import com.mwebster.iemaildon.mail.Folder;
+import com.mwebster.iemaildon.mail.Message;
+import com.mwebster.iemaildon.mail.MessageTestUtils;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.Part;
+import com.mwebster.iemaildon.mail.Store;
+import com.mwebster.iemaildon.mail.Folder.FolderType;
+import com.mwebster.iemaildon.mail.Folder.OpenMode;
+import com.mwebster.iemaildon.mail.Message.RecipientType;
+import com.mwebster.iemaildon.mail.MessageTestUtils.MultipartBuilder;
+import com.mwebster.iemaildon.mail.internet.BinaryTempFileBody;
+import com.mwebster.iemaildon.mail.internet.MimeMessage;
+import com.mwebster.iemaildon.mail.internet.MimeUtility;
+import com.mwebster.iemaildon.mail.internet.TextBody;
+import com.mwebster.iemaildon.mail.store.LocalStore.LocalMessage;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -56,7 +56,7 @@ import java.util.HashSet;
 @MediumTest
 public class LocalStoreUnitTests extends AndroidTestCase {
     
-    public static final String DB_NAME = "com.mwebster.iemail.mail.store.LocalStoreUnitTests.db";
+    public static final String DB_NAME = "com.mwebster.iemaildon.mail.store.LocalStoreUnitTests.db";
 
     private static final String SENDER = "sender@android.com";
     private static final String RECIPIENT_TO = "recipient-to@android.com";

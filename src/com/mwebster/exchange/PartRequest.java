@@ -17,7 +17,7 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.iemail.provider.EmailContent.Attachment;
+import com.mwebster.iemaildon.provider.EmailContent.Attachment;
 
 /**
  * PartRequest is the EAS wrapper for attachment loading requests.  In addition to information about

@@ -14,33 +14,33 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail;
+package com.mwebster.iemaildon;
 
-import com.mwebster.iemail.mail.Address;
-import com.mwebster.iemail.mail.Body;
-import com.mwebster.iemail.mail.BodyPart;
-import com.mwebster.iemail.mail.Flag;
-import com.mwebster.iemail.mail.Folder;
-import com.mwebster.iemail.mail.Message;
-import com.mwebster.iemail.mail.MessageTestUtils;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.Part;
-import com.mwebster.iemail.mail.Folder.OpenMode;
-import com.mwebster.iemail.mail.Message.RecipientType;
-import com.mwebster.iemail.mail.MessageTestUtils.MessageBuilder;
-import com.mwebster.iemail.mail.MessageTestUtils.MultipartBuilder;
-import com.mwebster.iemail.mail.internet.MimeBodyPart;
-import com.mwebster.iemail.mail.internet.MimeHeader;
-import com.mwebster.iemail.mail.internet.MimeMessage;
-import com.mwebster.iemail.mail.internet.MimeUtility;
-import com.mwebster.iemail.mail.internet.TextBody;
-import com.mwebster.iemail.mail.store.LocalStore;
-import com.mwebster.iemail.mail.store.LocalStoreUnitTests;
-import com.mwebster.iemail.provider.EmailContent;
-import com.mwebster.iemail.provider.EmailProvider;
-import com.mwebster.iemail.provider.ProviderTestUtils;
-import com.mwebster.iemail.provider.EmailContent.Attachment;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.mail.Address;
+import com.mwebster.iemaildon.mail.Body;
+import com.mwebster.iemaildon.mail.BodyPart;
+import com.mwebster.iemaildon.mail.Flag;
+import com.mwebster.iemaildon.mail.Folder;
+import com.mwebster.iemaildon.mail.Message;
+import com.mwebster.iemaildon.mail.MessageTestUtils;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.Part;
+import com.mwebster.iemaildon.mail.Folder.OpenMode;
+import com.mwebster.iemaildon.mail.Message.RecipientType;
+import com.mwebster.iemaildon.mail.MessageTestUtils.MessageBuilder;
+import com.mwebster.iemaildon.mail.MessageTestUtils.MultipartBuilder;
+import com.mwebster.iemaildon.mail.internet.MimeBodyPart;
+import com.mwebster.iemaildon.mail.internet.MimeHeader;
+import com.mwebster.iemaildon.mail.internet.MimeMessage;
+import com.mwebster.iemaildon.mail.internet.MimeUtility;
+import com.mwebster.iemaildon.mail.internet.TextBody;
+import com.mwebster.iemaildon.mail.store.LocalStore;
+import com.mwebster.iemaildon.mail.store.LocalStoreUnitTests;
+import com.mwebster.iemaildon.provider.EmailContent;
+import com.mwebster.iemaildon.provider.EmailProvider;
+import com.mwebster.iemaildon.provider.ProviderTestUtils;
+import com.mwebster.iemaildon.provider.EmailContent.Attachment;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -60,7 +60,7 @@ import java.util.Date;
  * a true "unit test".
  * 
  * You can run this entire test case with:
- *   runtest -c com.mwebster.iemail.LegacyConversionsTests email
+ *   runtest -c com.mwebster.iemaildon.LegacyConversionsTests email
  */
 public class LegacyConversionsTests extends ProviderTestCase2<EmailProvider> {
 

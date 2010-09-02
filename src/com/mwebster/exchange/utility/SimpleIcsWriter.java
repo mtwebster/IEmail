@@ -15,7 +15,7 @@
 
 package com.mwebster.exchange.utility;
 
-import com.mwebster.iemail.Utility;
+import com.mwebster.iemaildon.Utility;
 
 import android.text.TextUtils;
 

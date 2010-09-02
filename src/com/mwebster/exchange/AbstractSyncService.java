@@ -17,9 +17,9 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
 import com.mwebster.exchange.utility.FileLogger;
 
 import android.content.ContentResolver;

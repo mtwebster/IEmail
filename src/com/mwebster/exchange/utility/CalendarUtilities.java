@@ -16,15 +16,15 @@
 
 package com.mwebster.exchange.utility;
 
-import com.mwebster.iemail.Email;
-import com.mwebster.iemail.R;
-import com.mwebster.iemail.Utility;
-import com.mwebster.iemail.mail.Address;
-import com.mwebster.iemail.provider.EmailContent;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.Attachment;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
-import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemaildon.Email;
+import com.mwebster.iemaildon.R;
+import com.mwebster.iemaildon.Utility;
+import com.mwebster.iemaildon.mail.Address;
+import com.mwebster.iemaildon.provider.EmailContent;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.Attachment;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
 import com.mwebster.exchange.Eas;
 import com.mwebster.exchange.EasSyncService;
 import com.mwebster.exchange.SyncManager;

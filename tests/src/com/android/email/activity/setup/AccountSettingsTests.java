@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.activity.setup;
+package com.mwebster.iemaildon.activity.setup;
 
-import com.mwebster.iemail.mail.Store;
-import com.mwebster.iemail.provider.EmailContent;
-import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemaildon.mail.Store;
+import com.mwebster.iemaildon.provider.EmailContent;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
 
 import android.content.ContentUris;
 import android.content.Context;

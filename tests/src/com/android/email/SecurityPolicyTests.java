@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail;
+package com.mwebster.iemaildon;
 
-import com.mwebster.iemail.SecurityPolicy.PolicySet;
-import com.mwebster.iemail.provider.EmailProvider;
-import com.mwebster.iemail.provider.ProviderTestUtils;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.AccountColumns;
+import com.mwebster.iemaildon.SecurityPolicy.PolicySet;
+import com.mwebster.iemaildon.provider.EmailProvider;
+import com.mwebster.iemaildon.provider.ProviderTestUtils;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.AccountColumns;
 
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -35,7 +35,7 @@ import android.test.suitebuilder.annotation.SmallTest;
  * This is a series of unit tests for backup/restore of the SecurityPolicy class.
  *
  * You can run this entire test case with:
- *   runtest -c com.mwebster.iemail.SecurityPolicyTests email
+ *   runtest -c com.mwebster.iemaildon.SecurityPolicyTests email
 */
 @MediumTest
 public class SecurityPolicyTests extends ProviderTestCase2<EmailProvider> {

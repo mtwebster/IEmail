@@ -30,6 +30,6 @@
     -->
 
 <senders>
-    <sender scheme="smtp" class="com.mwebster.iemail.mail.transport.SmtpSender" />
-    <sender scheme="eas" class="com.mwebster.iemail.mail.transport.ExchangeSender" />
+    <sender scheme="smtp" class="com.mwebster.iemaildon.mail.transport.SmtpSender" />
+    <sender scheme="eas" class="com.mwebster.iemaildon.mail.transport.ExchangeSender" />
 </senders>

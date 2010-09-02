@@ -14,25 +14,25 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.store;
+package com.mwebster.iemaildon.mail.store;
 
-import com.mwebster.iemail.mail.Address;
-import com.mwebster.iemail.mail.FetchProfile;
-import com.mwebster.iemail.mail.Flag;
-import com.mwebster.iemail.mail.Folder;
-import com.mwebster.iemail.mail.Message;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.Part;
-import com.mwebster.iemail.mail.Transport;
-import com.mwebster.iemail.mail.Folder.FolderType;
-import com.mwebster.iemail.mail.Folder.OpenMode;
-import com.mwebster.iemail.mail.Message.RecipientType;
-import com.mwebster.iemail.mail.internet.BinaryTempFileBody;
-import com.mwebster.iemail.mail.internet.MimeUtility;
-import com.mwebster.iemail.mail.internet.TextBody;
-import com.mwebster.iemail.mail.store.ImapStore.ImapMessage;
-import com.mwebster.iemail.mail.transport.DiscourseLogger;
-import com.mwebster.iemail.mail.transport.MockTransport;
+import com.mwebster.iemaildon.mail.Address;
+import com.mwebster.iemaildon.mail.FetchProfile;
+import com.mwebster.iemaildon.mail.Flag;
+import com.mwebster.iemaildon.mail.Folder;
+import com.mwebster.iemaildon.mail.Message;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.Part;
+import com.mwebster.iemaildon.mail.Transport;
+import com.mwebster.iemaildon.mail.Folder.FolderType;
+import com.mwebster.iemaildon.mail.Folder.OpenMode;
+import com.mwebster.iemaildon.mail.Message.RecipientType;
+import com.mwebster.iemaildon.mail.internet.BinaryTempFileBody;
+import com.mwebster.iemaildon.mail.internet.MimeUtility;
+import com.mwebster.iemaildon.mail.internet.TextBody;
+import com.mwebster.iemaildon.mail.store.ImapStore.ImapMessage;
+import com.mwebster.iemaildon.mail.transport.DiscourseLogger;
+import com.mwebster.iemaildon.mail.transport.MockTransport;
 
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;
@@ -48,7 +48,7 @@ import java.util.Locale;
  * complete - no server(s) required.
  *
  * To run these tests alone, use:
- *   $ runtest -c com.mwebster.iemail.mail.store.ImapStoreUnitTests email
+ *   $ runtest -c com.mwebster.iemaildon.mail.store.ImapStoreUnitTests email
  */
 @SmallTest
 public class ImapStoreUnitTests extends AndroidTestCase {

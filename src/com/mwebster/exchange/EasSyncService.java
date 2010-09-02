@@ -17,25 +17,25 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.iemail.SecurityPolicy;
-import com.mwebster.iemail.Utility;
-import com.mwebster.iemail.SecurityPolicy.PolicySet;
-import com.mwebster.iemail.mail.Address;
-import com.mwebster.iemail.mail.AuthenticationFailedException;
-import com.mwebster.iemail.mail.MeetingInfo;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.PackedString;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.AccountColumns;
-import com.mwebster.iemail.provider.EmailContent.Attachment;
-import com.mwebster.iemail.provider.EmailContent.AttachmentColumns;
-import com.mwebster.iemail.provider.EmailContent.HostAuth;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
-import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
-import com.mwebster.iemail.provider.EmailContent.Message;
-import com.mwebster.iemail.service.EmailServiceConstants;
-import com.mwebster.iemail.service.EmailServiceProxy;
-import com.mwebster.iemail.service.EmailServiceStatus;
+import com.mwebster.iemaildon.SecurityPolicy;
+import com.mwebster.iemaildon.Utility;
+import com.mwebster.iemaildon.SecurityPolicy.PolicySet;
+import com.mwebster.iemaildon.mail.Address;
+import com.mwebster.iemaildon.mail.AuthenticationFailedException;
+import com.mwebster.iemaildon.mail.MeetingInfo;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.PackedString;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.AccountColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Attachment;
+import com.mwebster.iemaildon.provider.EmailContent.AttachmentColumns;
+import com.mwebster.iemaildon.provider.EmailContent.HostAuth;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
+import com.mwebster.iemaildon.service.EmailServiceConstants;
+import com.mwebster.iemaildon.service.EmailServiceProxy;
+import com.mwebster.iemaildon.service.EmailServiceStatus;
 import com.mwebster.exchange.adapter.AbstractSyncAdapter;
 import com.mwebster.exchange.adapter.AccountSyncAdapter;
 import com.mwebster.exchange.adapter.CalendarSyncAdapter;
@@ -1961,27 +1961,27 @@ public class EasSyncService extends AbstractSyncService {
     private String getEmailFilter() {
         String filter = Eas.FILTER_1_WEEK;
         switch (mAccount.mSyncLookback) {
-            case com.mwebster.iemail.Account.SYNC_WINDOW_1_DAY: {
+            case com.mwebster.iemaildon.Account.SYNC_WINDOW_1_DAY: {
                 filter = Eas.FILTER_1_DAY;
                 break;
             }
-            case com.mwebster.iemail.Account.SYNC_WINDOW_3_DAYS: {
+            case com.mwebster.iemaildon.Account.SYNC_WINDOW_3_DAYS: {
                 filter = Eas.FILTER_3_DAYS;
                 break;
             }
-            case com.mwebster.iemail.Account.SYNC_WINDOW_1_WEEK: {
+            case com.mwebster.iemaildon.Account.SYNC_WINDOW_1_WEEK: {
                 filter = Eas.FILTER_1_WEEK;
                 break;
             }
-            case com.mwebster.iemail.Account.SYNC_WINDOW_2_WEEKS: {
+            case com.mwebster.iemaildon.Account.SYNC_WINDOW_2_WEEKS: {
                 filter = Eas.FILTER_2_WEEKS;
                 break;
             }
-            case com.mwebster.iemail.Account.SYNC_WINDOW_1_MONTH: {
+            case com.mwebster.iemaildon.Account.SYNC_WINDOW_1_MONTH: {
                 filter = Eas.FILTER_1_MONTH;
                 break;
             }
-            case com.mwebster.iemail.Account.SYNC_WINDOW_ALL: {
+            case com.mwebster.iemaildon.Account.SYNC_WINDOW_ALL: {
                 filter = Eas.FILTER_ALL;
                 break;
             }

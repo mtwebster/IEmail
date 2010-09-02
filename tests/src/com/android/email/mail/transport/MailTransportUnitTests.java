@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.transport;
+package com.mwebster.iemaildon.mail.transport;
 
-import com.mwebster.iemail.mail.transport.MailTransport;
+import com.mwebster.iemaildon.mail.transport.MailTransport;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;

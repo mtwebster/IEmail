@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.store;
+package com.mwebster.iemaildon.mail.store;
 
-import com.mwebster.iemail.FixedLengthInputStream;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.store.ImapResponseParser.ImapList;
-import com.mwebster.iemail.mail.store.ImapResponseParser.ImapResponse;
-import com.mwebster.iemail.mail.transport.DiscourseLogger;
+import com.mwebster.iemaildon.FixedLengthInputStream;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.store.ImapResponseParser.ImapList;
+import com.mwebster.iemaildon.mail.store.ImapResponseParser.ImapResponse;
+import com.mwebster.iemaildon.mail.transport.DiscourseLogger;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;

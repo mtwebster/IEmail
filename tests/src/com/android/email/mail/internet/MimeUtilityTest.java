@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.internet;
+package com.mwebster.iemaildon.mail.internet;
 
-import com.mwebster.iemail.mail.BodyPart;
-import com.mwebster.iemail.mail.MessageTestUtils;
-import com.mwebster.iemail.mail.Message;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.Part;
-import com.mwebster.iemail.mail.MessageTestUtils.MessageBuilder;
-import com.mwebster.iemail.mail.MessageTestUtils.MultipartBuilder;
+import com.mwebster.iemaildon.mail.BodyPart;
+import com.mwebster.iemaildon.mail.MessageTestUtils;
+import com.mwebster.iemaildon.mail.Message;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.Part;
+import com.mwebster.iemaildon.mail.MessageTestUtils.MessageBuilder;
+import com.mwebster.iemaildon.mail.MessageTestUtils.MultipartBuilder;
 
 import android.test.suitebuilder.annotation.SmallTest;
 

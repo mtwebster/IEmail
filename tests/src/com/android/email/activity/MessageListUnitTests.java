@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.activity;
+package com.mwebster.iemaildon.activity;
 
-import com.mwebster.iemail.Email;
-import com.mwebster.iemail.provider.EmailContent;
-import com.mwebster.iemail.provider.EmailContent.Message;
-import com.mwebster.iemail.provider.EmailContent.MessageColumns;
+import com.mwebster.iemaildon.Email;
+import com.mwebster.iemaildon.provider.EmailContent;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
+import com.mwebster.iemaildon.provider.EmailContent.MessageColumns;
 
 import android.content.Context;
 import android.content.Intent;
@@ -45,11 +45,11 @@ import java.util.Set;
 public class MessageListUnitTests
         extends ActivityInstrumentationTestCase2<MessageList> {
 
-    private static final String EXTRA_ACCOUNT_ID = "com.mwebster.iemail.activity._ACCOUNT_ID";
-    private static final String EXTRA_MAILBOX_TYPE = "com.mwebster.iemail.activity.MAILBOX_TYPE";
-    private static final String EXTRA_MAILBOX_ID = "com.mwebster.iemail.activity.MAILBOX_ID";
+    private static final String EXTRA_ACCOUNT_ID = "com.mwebster.iemaildon.activity._ACCOUNT_ID";
+    private static final String EXTRA_MAILBOX_TYPE = "com.mwebster.iemaildon.activity.MAILBOX_TYPE";
+    private static final String EXTRA_MAILBOX_ID = "com.mwebster.iemaildon.activity.MAILBOX_ID";
     private static final String STATE_CHECKED_ITEMS =
-        "com.mwebster.iemail.activity.MessageList.checkedItems";
+        "com.mwebster.iemaildon.activity.MessageList.checkedItems";
     private Context mContext;
     private MessageList mMessageList;
     private CursorAdapter mListAdapter;

@@ -15,11 +15,11 @@
 
 package com.mwebster.exchange.provider;
 
-import com.mwebster.iemail.Email;
-import com.mwebster.iemail.EmailAddressAdapter;
-import com.mwebster.iemail.R;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.HostAuth;
+import com.mwebster.iemaildon.Email;
+import com.mwebster.iemaildon.EmailAddressAdapter;
+import com.mwebster.iemaildon.R;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.HostAuth;
 
 import android.app.Activity;
 import android.content.Context;

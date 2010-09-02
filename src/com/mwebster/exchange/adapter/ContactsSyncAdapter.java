@@ -17,7 +17,7 @@
 
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
 import com.mwebster.exchange.Eas;
 import com.mwebster.exchange.EasSyncService;
 
@@ -171,7 +171,7 @@ public class ContactsSyncAdapter extends AbstractSyncAdapter {
                     ContentValues cv = new ContentValues();
                     cv.put(Groups.ACCOUNT_NAME, mAccount.mEmailAddress);
                     cv.put(Groups.ACCOUNT_TYPE,
-                            com.mwebster.iemail.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE);
+                            com.mwebster.iemaildon.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE);
                     cv.put(Settings.UNGROUPED_VISIBLE, true);
                     client.insert(addCallerIsSyncAdapterParameter(Settings.CONTENT_URI), cv);
                     return "0";
@@ -892,7 +892,7 @@ public class ContactsSyncAdapter extends AbstractSyncAdapter {
         return uri.buildUpon()
             .appendQueryParameter(RawContacts.ACCOUNT_NAME, mAccount.mEmailAddress)
             .appendQueryParameter(RawContacts.ACCOUNT_TYPE,
-                    com.mwebster.iemail.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE)
+                    com.mwebster.iemaildon.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE)
             .appendQueryParameter(ContactsContract.CALLER_IS_SYNCADAPTER, "true")
             .build();
     }
@@ -1779,7 +1779,7 @@ public class ContactsSyncAdapter extends AbstractSyncAdapter {
         Uri uri = RawContactsEntity.CONTENT_URI.buildUpon()
                 .appendQueryParameter(RawContacts.ACCOUNT_NAME, mAccount.mEmailAddress)
                 .appendQueryParameter(RawContacts.ACCOUNT_TYPE,
-                        com.mwebster.iemail.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE)
+                        com.mwebster.iemaildon.Email.EXCHANGE_ACCOUNT_MANAGER_TYPE)
                 .appendQueryParameter(ContactsContract.CALLER_IS_SYNCADAPTER, "true")
                 .build();
 

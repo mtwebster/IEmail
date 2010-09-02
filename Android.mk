@@ -20,8 +20,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 # EXCHANGE-REMOVE-SECTION-START
 LOCAL_SRC_FILES += \
-    src/com/mwebster/iemail/service/IEmailService.aidl \
-    src/com/mwebster/iemail/service/IEmailServiceCallback.aidl
+    src/com/mwebster/iemaildon/service/IEmailService.aidl \
+    src/com/mwebster/iemaildon/service/IEmailServiceCallback.aidl
 # EXCHANGE-REMOVE-SECTION-END
 
 LOCAL_JAVA_STATIC_LIBRARIES := android-common

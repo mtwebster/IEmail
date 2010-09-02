@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail;
+package com.mwebster.iemaildon.mail;
 
 public class MockFolder extends Folder {
 

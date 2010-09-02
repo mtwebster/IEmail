@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.activity;
+package com.mwebster.iemaildon.activity;
 
-import com.mwebster.iemail.Email;
-import com.mwebster.iemail.EmailAddressValidator;
-import com.mwebster.iemail.R;
-import com.mwebster.iemail.mail.Address;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemaildon.Email;
+import com.mwebster.iemaildon.EmailAddressValidator;
+import com.mwebster.iemaildon.R;
+import com.mwebster.iemaildon.mail.Address;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -99,10 +99,10 @@ public class MessageComposeInstrumentationTests
     private static final String UTF32_BODY = "\uD834\uDF01\uD834\uDF46";
 
     /** Note - these are copied from private strings in MessageCompose.  Make them package? */
-    private static final String ACTION_REPLY = "com.mwebster.iemail.intent.action.REPLY";
-    private static final String ACTION_REPLY_ALL = "com.mwebster.iemail.intent.action.REPLY_ALL";
-    private static final String ACTION_FORWARD = "com.mwebster.iemail.intent.action.FORWARD";
-    private static final String ACTION_EDIT_DRAFT = "com.mwebster.iemail.intent.action.EDIT_DRAFT";
+    private static final String ACTION_REPLY = "com.mwebster.iemaildon.intent.action.REPLY";
+    private static final String ACTION_REPLY_ALL = "com.mwebster.iemaildon.intent.action.REPLY_ALL";
+    private static final String ACTION_FORWARD = "com.mwebster.iemaildon.intent.action.FORWARD";
+    private static final String ACTION_EDIT_DRAFT = "com.mwebster.iemaildon.intent.action.EDIT_DRAFT";
 
     public MessageComposeInstrumentationTests() {
         super(MessageCompose.class);

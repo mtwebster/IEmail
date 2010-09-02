@@ -17,11 +17,11 @@
 
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.iemail.Email;
-import com.mwebster.iemail.Utility;
-import com.mwebster.iemail.provider.EmailContent;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
-import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemaildon.Email;
+import com.mwebster.iemaildon.Utility;
+import com.mwebster.iemaildon.provider.EmailContent;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
 import com.mwebster.exchange.Eas;
 import com.mwebster.exchange.EasOutboxService;
 import com.mwebster.exchange.EasSyncService;

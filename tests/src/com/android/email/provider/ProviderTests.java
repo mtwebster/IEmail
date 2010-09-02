@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.provider;
+package com.mwebster.iemaildon.provider;
 
-import com.mwebster.iemail.provider.EmailContent.Account;
-import com.mwebster.iemail.provider.EmailContent.AccountColumns;
-import com.mwebster.iemail.provider.EmailContent.Attachment;
-import com.mwebster.iemail.provider.EmailContent.AttachmentColumns;
-import com.mwebster.iemail.provider.EmailContent.Body;
-import com.mwebster.iemail.provider.EmailContent.BodyColumns;
-import com.mwebster.iemail.provider.EmailContent.HostAuth;
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
-import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
-import com.mwebster.iemail.provider.EmailContent.Message;
-import com.mwebster.iemail.provider.EmailContent.MessageColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.AccountColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Attachment;
+import com.mwebster.iemaildon.provider.EmailContent.AttachmentColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Body;
+import com.mwebster.iemaildon.provider.EmailContent.BodyColumns;
+import com.mwebster.iemaildon.provider.EmailContent.HostAuth;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
+import com.mwebster.iemaildon.provider.EmailContent.MessageColumns;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -48,7 +48,7 @@ import java.util.ArrayList;
  * Tests of the Email provider.
  *
  * You can run this entire test case with:
- *   runtest -c com.mwebster.iemail.provider.ProviderTests email
+ *   runtest -c com.mwebster.iemaildon.provider.ProviderTests email
  */
 public class ProviderTests extends ProviderTestCase2<EmailProvider> {
 

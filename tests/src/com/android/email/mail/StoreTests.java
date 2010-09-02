@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail;
+package com.mwebster.iemaildon.mail;
 
-import com.mwebster.iemail.Email;
+import com.mwebster.iemaildon.Email;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.MediumTest;

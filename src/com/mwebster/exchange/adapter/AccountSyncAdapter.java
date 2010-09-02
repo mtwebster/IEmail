@@ -1,6 +1,6 @@
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
 import com.mwebster.exchange.EasSyncService;
 
 import java.io.IOException;

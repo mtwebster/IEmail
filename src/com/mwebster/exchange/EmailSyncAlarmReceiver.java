@@ -17,8 +17,8 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.iemail.provider.EmailContent.Message;
-import com.mwebster.iemail.provider.EmailContent.MessageColumns;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
+import com.mwebster.iemaildon.provider.EmailContent.MessageColumns;
 
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;

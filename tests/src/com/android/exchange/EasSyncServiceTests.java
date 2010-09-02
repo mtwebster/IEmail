@@ -17,7 +17,7 @@
 
 package com.mwebster.exchange;
 
-import com.mwebster.iemail.provider.EmailContent.Account;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
 
 import org.apache.http.Header;
 import org.apache.http.client.methods.HttpPost;

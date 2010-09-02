@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.internet;
+package com.mwebster.iemaildon.mail.internet;
 
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.internet.MimeBodyPart;
-import com.mwebster.iemail.mail.internet.MimeHeader;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.internet.MimeBodyPart;
+import com.mwebster.iemaildon.mail.internet.MimeHeader;
 
 import junit.framework.TestCase;
 

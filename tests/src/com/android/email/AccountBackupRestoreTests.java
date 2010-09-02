@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail;
+package com.mwebster.iemaildon;
 
-import com.mwebster.iemail.provider.EmailContent;
-import com.mwebster.iemail.provider.EmailProvider;
-import com.mwebster.iemail.provider.ProviderTestUtils;
+import com.mwebster.iemaildon.provider.EmailContent;
+import com.mwebster.iemaildon.provider.EmailProvider;
+import com.mwebster.iemaildon.provider.ProviderTestUtils;
 
 import android.content.Context;
 import android.database.Cursor;

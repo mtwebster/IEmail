@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail;
+package com.mwebster.iemaildon;
 
 import android.net.Uri;
 import android.test.AndroidTestCase;

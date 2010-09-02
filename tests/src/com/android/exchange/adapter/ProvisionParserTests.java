@@ -16,7 +16,7 @@
 
 package com.mwebster.exchange.adapter;
 
-import com.mwebster.iemail.SecurityPolicy.PolicySet;
+import com.mwebster.iemaildon.SecurityPolicy.PolicySet;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

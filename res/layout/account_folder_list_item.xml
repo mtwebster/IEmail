@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<com.mwebster.iemail.activity.AccountFolderListItem
+<com.mwebster.iemaildon.activity.AccountFolderListItem
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
@@ -99,4 +99,4 @@
         android:paddingTop="5dip"
         android:paddingLeft="5dip"
         android:src="@drawable/btn_folder"/>
-</com.mwebster.iemail.activity.AccountFolderListItem>
+</com.mwebster.iemaildon.activity.AccountFolderListItem>

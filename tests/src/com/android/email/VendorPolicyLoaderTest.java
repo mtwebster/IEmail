@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail;
+package com.mwebster.iemaildon;
 
-import com.mwebster.iemail.activity.setup.AccountSettingsUtils.Provider;
+import com.mwebster.iemaildon.activity.setup.AccountSettingsUtils.Provider;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -37,7 +37,7 @@ public class VendorPolicyLoaderTest extends AndroidTestCase {
     public void testIsSystemPackage() {
         final Context c = getContext();
         assertEquals(false, VendorPolicyLoader.isSystemPackage(c, "no.such.package"));
-        assertEquals(false, VendorPolicyLoader.isSystemPackage(c, "com.mwebster.iemail.tests"));
+        assertEquals(false, VendorPolicyLoader.isSystemPackage(c, "com.mwebster.iemaildon.tests"));
         assertEquals(true, VendorPolicyLoader.isSystemPackage(c, "com.android.settings"));
     }
 
@@ -76,7 +76,7 @@ public class VendorPolicyLoaderTest extends AndroidTestCase {
      * where we have a non-system vendor policy installed, which shouldn't be used.
      */
     public void testGetPolicyNonSystem() {
-        VendorPolicyLoader pl = new VendorPolicyLoader(getContext(), "com.mwebster.iemail.tests",
+        VendorPolicyLoader pl = new VendorPolicyLoader(getContext(), "com.mwebster.iemaildon.tests",
                 MockVendorPolicy.class.getName(), false);
 
         MockVendorPolicy.passedPolicy = null;

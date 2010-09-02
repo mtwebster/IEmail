@@ -16,7 +16,7 @@
 
 package org.apache.james.mime4j;
 
-import com.mwebster.iemail.Email;
+import com.mwebster.iemaildon.Email;
 
 /**
  * Empty stub for the apache logging library.

@@ -1,24 +1,24 @@
 # keep names that are used by reflection.
--keep class com.mwebster.iemail.provider.EmailContent$Account
+-keep class com.mwebster.iemaildon.provider.EmailContent$Account
 -keepclasseswithmembers class * {
-  public static void actionEditIncomingSettings(android.app.Activity, com.mwebster.iemail.provider.EmailContent$Account);
+  public static void actionEditIncomingSettings(android.app.Activity, com.mwebster.iemaildon.provider.EmailContent$Account);
 }
 
 -keepclasseswithmembers class * {
-  public static void actionEditOutgoingSettings(android.app.Activity, com.mwebster.iemail.provider.EmailContent$Account);
+  public static void actionEditOutgoingSettings(android.app.Activity, com.mwebster.iemaildon.provider.EmailContent$Account);
 }
 
 -keepclasseswithmembers class * {
   public *** newInstance(android.content.Context, java.lang.String);
 }
 
--keep class com.mwebster.iemail.mail.Store$PersistentDataCallbacks {
+-keep class com.mwebster.iemaildon.mail.Store$PersistentDataCallbacks {
   *** getPersistentString(...);
   *** setPersistentString(...);
 }
 
 -keepclasseswithmembers class * {
-  public *** newInstance(java.lang.String, android.content.Context, com.mwebster.iemail.mail.Store$PersistentDataCallbacks);
+  public *** newInstance(java.lang.String, android.content.Context, com.mwebster.iemaildon.mail.Store$PersistentDataCallbacks);
 }
 
 -keep class * extends org.apache.james.mime4j.util.TempStorage
@@ -30,93 +30,93 @@
   *** *ForTest(...);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.GroupMessagingListener {
-  *** removeListener(com.mwebster.iemail.MessagingListener);
+-keepclasseswithmembers class com.mwebster.iemaildon.GroupMessagingListener {
+  *** removeListener(com.mwebster.iemaildon.MessagingListener);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.Controller {
+-keepclasseswithmembers class com.mwebster.iemaildon.Controller {
   *** setProviderContext(android.content.Context);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.Address {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.Address {
   <init>(...);
   *** parseAndPack(java.lang.String);
   *** legacyUnpack(java.lang.String);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.SecurityPolicy {
+-keepclasseswithmembers class com.mwebster.iemaildon.SecurityPolicy {
   *** setContext(android.content.Context);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.SecurityPolicy$PolicySet {
+-keepclasseswithmembers class com.mwebster.iemaildon.SecurityPolicy$PolicySet {
   <init>(...);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.MessagingController {
-  *** injectMockController(com.mwebster.iemail.MessagingController);
+-keepclasseswithmembers class com.mwebster.iemaildon.MessagingController {
+  *** injectMockController(com.mwebster.iemaildon.MessagingController);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.provider.EmailProvider {
+-keepclasseswithmembers class com.mwebster.iemaildon.provider.EmailProvider {
   *** getReadableDatabase(android.content.Context);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.provider.EmailContent$Attachment {
+-keepclasseswithmembers class com.mwebster.iemaildon.provider.EmailContent$Attachment {
   *** createUniqueFile(java.lang.String);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.Account {
+-keepclasseswithmembers class com.mwebster.iemaildon.Account {
   *** getContentUri();
 }
 
--keepclasseswithmembers class com.mwebster.iemail.Preferences {
+-keepclasseswithmembers class com.mwebster.iemaildon.Preferences {
   *** getAccountByContentUri(android.net.Uri);
 }
 
--keep class com.mwebster.iemail.mail.Message$RecipientType
+-keep class com.mwebster.iemaildon.mail.Message$RecipientType
 
--keepclasseswithmembers class com.mwebster.iemail.mail.Message {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.Message {
   *** setRecipient(...);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.internet.MimeMessage {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.internet.MimeMessage {
   <init>(...);
   *** getExtendedHeader(java.lang.String);
   *** setExtendedHeader(java.lang.String, java.lang.String);
 }
 
--keep class com.mwebster.iemail.mail.Part
+-keep class com.mwebster.iemaildon.mail.Part
 
--keepclasseswithmembers class com.mwebster.iemail.mail.internet.MimeUtility {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.internet.MimeUtility {
   *** foldAndEncode(...);
   *** findPartByContentId(...);
   *** findFirstPartByMimeType(...);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.transport.SmtpSender {
-  *** setTransport(com.mwebster.iemail.mail.Transport);
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.transport.SmtpSender {
+  *** setTransport(com.mwebster.iemaildon.mail.Transport);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.Store {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.Store {
   *** requireStructurePrefetch();
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.store.ImapStore {
-  *** setTransport(com.mwebster.iemail.mail.Transport);
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.store.ImapStore {
+  *** setTransport(com.mwebster.iemaildon.mail.Transport);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.store.ImapStore$ImapFolder {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.store.ImapStore$ImapFolder {
   *** getUnreadMessageCount(...);
   *** getRole(...);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.store.LocalStore {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.store.LocalStore {
   *** resetVisibleLimits(...);
   *** getPersistentCallbacks(...);
   *** getPersistentString(...);
   *** setPersistentString(...);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.store.LocalStore$LocalFolder {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.store.LocalStore$LocalFolder {
   *** updateMessage(...);
   *** getMessages(...);
   *** getPersistentCallbacks(...);
@@ -126,38 +126,38 @@
   *** getPersistentString(...);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.store.Pop3Store {
-  *** setTransport(com.mwebster.iemail.mail.Transport);
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.store.Pop3Store {
+  *** setTransport(com.mwebster.iemaildon.mail.Transport);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.store.Pop3Store$Pop3Folder {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.store.Pop3Store$Pop3Folder {
   *** getUnreadMessageCount(...);
   *** isOpen(...);
 }
 
--keepclasseswithmembers class com.mwebster.iemail.mail.Folder {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.Folder {
   *** getUnreadMessageCount(...);
   *** delete(...);
   *** getRole(...);
 }
 
--keep class com.mwebster.iemail.mail.Folder$FolderRole
+-keep class com.mwebster.iemaildon.mail.Folder$FolderRole
 
--keepclasseswithmembers class com.mwebster.iemail.mail.Folder$PersistentDataCallbacks {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.Folder$PersistentDataCallbacks {
   *** getPersistentString(...);
   *** setPersistentString(...);
   *** setPersistentStringAndMessageFlags(...);
 }
 
--keep class com.mwebster.iemail.mail.MessageRetrievalListener
+-keep class com.mwebster.iemaildon.mail.MessageRetrievalListener
 
 -keepclasseswithmembers class com.mwebster.exchange.adapter.Parser {
   *** resetInput(...);
 }
 
--keep class com.mwebster.iemail.mail.Flag
+-keep class com.mwebster.iemaildon.mail.Flag
 
--keepclasseswithmembers class com.mwebster.iemail.mail.PackedString$Builder {
+-keepclasseswithmembers class com.mwebster.iemaildon.mail.PackedString$Builder {
   <init>(...);
   *** get(...);
 }

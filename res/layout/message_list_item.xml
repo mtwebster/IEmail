@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<com.mwebster.iemail.activity.MessageListItem
+<com.mwebster.iemaildon.activity.MessageListItem
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
@@ -75,4 +75,4 @@
         android:layout_toLeftOf="@id/date"
         android:paddingLeft="10dip"
         android:layout_marginRight="6dip" />
-</com.mwebster.iemail.activity.MessageListItem>
+</com.mwebster.iemaildon.activity.MessageListItem>

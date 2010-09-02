@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.mwebster.iemail.mail.transport;
+package com.mwebster.iemaildon.mail.transport;
 
-import com.mwebster.iemail.mail.Address;
-import com.mwebster.iemail.mail.MessagingException;
-import com.mwebster.iemail.mail.Transport;
-import com.mwebster.iemail.provider.EmailProvider;
-import com.mwebster.iemail.provider.EmailContent.Attachment;
-import com.mwebster.iemail.provider.EmailContent.Body;
-import com.mwebster.iemail.provider.EmailContent.Message;
+import com.mwebster.iemaildon.mail.Address;
+import com.mwebster.iemaildon.mail.MessagingException;
+import com.mwebster.iemaildon.mail.Transport;
+import com.mwebster.iemaildon.provider.EmailProvider;
+import com.mwebster.iemaildon.provider.EmailContent.Attachment;
+import com.mwebster.iemaildon.provider.EmailContent.Body;
+import com.mwebster.iemaildon.provider.EmailContent.Message;
 
 import org.apache.commons.io.IOUtils;
 
@@ -42,7 +42,7 @@ import java.io.OutputStream;
  * complete - no server(s) required.
  *
  * These tests can be run with the following command:
- *   runtest -c com.mwebster.iemail.mail.transport.SmtpSenderUnitTests email
+ *   runtest -c com.mwebster.iemaildon.mail.transport.SmtpSenderUnitTests email
  */
 @SmallTest
 public class SmtpSenderUnitTests extends ProviderTestCase2<EmailProvider> {
@@ -365,7 +365,7 @@ public class SmtpSenderUnitTests extends ProviderTestCase2<EmailProvider> {
         attachment.mMimeType = "image/jpg";
         attachment.mSize = 0;
         attachment.mContentId = null;
-        attachment.mContentUri = "content://com.mwebster.iemail/1/1";
+        attachment.mContentUri = "content://com.mwebster.iemaildon/1/1";
         attachment.mMessageKey = messageId;
         attachment.mLocation = null;
         attachment.mEncoding = null;
