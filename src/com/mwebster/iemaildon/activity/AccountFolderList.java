@@ -50,6 +50,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -824,7 +825,17 @@ public class AccountFolderList extends ListActivity implements OnItemClickListen
 
             long accountId = cursor.getLong(Account.CONTENT_ID_COLUMN);
             View chipView = view.findViewById(R.id.chip);
-            chipView.setBackgroundColor(cursor.getInt(Account.CONTENT_COLOR_COLUMN));
+            
+            String strBundle = cursor.getString(Account.CONTENT_SYNC_INTERVAL_COLUMN);
+  
+            String[] temp = strBundle.split(",");
+            int color = -1;
+            try {            
+                color = Integer.parseInt(temp[1]);
+            } catch (Exception e) {color = -1;}
+            
+            
+            chipView.setBackgroundColor(color);
             chipView.setVisibility(View.VISIBLE);
 
             String text = cursor.getString(Account.CONTENT_DISPLAY_NAME_COLUMN);

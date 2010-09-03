@@ -210,7 +210,7 @@ public class AccountSetupColor extends Activity implements OnClickListener, Seek
 	private void onDone() {
 		updateColor ();
 		mAccount.setAccountColor(mCurrentColor);
-        
+      
         if (mEditMode)
         {
         	if (mAccount.isSaved()) {
