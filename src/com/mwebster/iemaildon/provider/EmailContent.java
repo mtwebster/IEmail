@@ -29,6 +29,7 @@ import android.os.Environment;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.RemoteException;
+import android.util.Log;
 
 import java.io.File;
 import java.net.URI;
@@ -890,7 +891,7 @@ public abstract class EmailContent {
         public static final int CONTENT_SECURITY_FLAGS_COLUMN = 15;
         public static final int CONTENT_SECURITY_SYNC_KEY_COLUMN = 16;
         public static final int CONTENT_SIGNATURE_COLUMN = 17;
-        public static final int CONTENT_COLOR_COLUMN = 18;
+        
 
         public static final String[] CONTENT_PROJECTION = new String[] {
             RECORD_ID, AccountColumns.DISPLAY_NAME,
@@ -900,8 +901,8 @@ public abstract class EmailContent {
             AccountColumns.COMPATIBILITY_UUID, AccountColumns.SENDER_NAME,
             AccountColumns.RINGTONE_URI, AccountColumns.PROTOCOL_VERSION,
             AccountColumns.NEW_MESSAGE_COUNT, AccountColumns.SECURITY_FLAGS,
-            AccountColumns.SECURITY_SYNC_KEY, AccountColumns.SIGNATURE, 
-            AccountColumns.ACCOUNT_COLOR
+            AccountColumns.SECURITY_SYNC_KEY, AccountColumns.SIGNATURE 
+          
         };
 
         public static final int CONTENT_MAILBOX_TYPE_COLUMN = 1;
@@ -984,7 +985,20 @@ public abstract class EmailContent {
             mEmailAddress = cursor.getString(CONTENT_EMAIL_ADDRESS_COLUMN);
             mSyncKey = cursor.getString(CONTENT_SYNC_KEY_COLUMN);
             mSyncLookback = cursor.getInt(CONTENT_SYNC_LOOKBACK_COLUMN);
-            mSyncInterval = cursor.getInt(CONTENT_SYNC_INTERVAL_COLUMN);
+            
+            // we will unravel content_sync_interval_column to 2 comma sep ints
+            // that store the actual sync interval and the account color
+            // For some reason, as a non-system app, we can't (well, I can't)
+            // add a new column to the db
+            
+            String strBundle = cursor.getString(CONTENT_SYNC_INTERVAL_COLUMN);
+   
+            String[] temp = strBundle.split(",");
+            try {            
+                mSyncInterval = Integer.parseInt(temp[0]);
+                mAccountColor = Integer.parseInt(temp[1]);
+            } catch (Exception e) {}
+            
             mHostAuthKeyRecv = cursor.getLong(CONTENT_HOST_AUTH_KEY_RECV_COLUMN);
             mHostAuthKeySend = cursor.getLong(CONTENT_HOST_AUTH_KEY_SEND_COLUMN);
             mFlags = cursor.getInt(CONTENT_FLAGS_COLUMN);
@@ -997,7 +1011,6 @@ public abstract class EmailContent {
             mSecurityFlags = cursor.getInt(CONTENT_SECURITY_FLAGS_COLUMN);
             mSecuritySyncKey = cursor.getString(CONTENT_SECURITY_SYNC_KEY_COLUMN);
             mSignature = cursor.getString(CONTENT_SIGNATURE_COLUMN);
-            mAccountColor = cursor.getInt(CONTENT_COLOR_COLUMN);
             return this;
         }
 
@@ -1090,11 +1103,11 @@ public abstract class EmailContent {
          * TODO define sentinel values for "never", "push", etc.  See Account.java
          * @param minutes the number of minutes between polling checks
          */
+        
         public void setSyncInterval(int minutes)
         {
             mSyncInterval = minutes;
         }
-
         /**
          * @return One of the {@code Account.SYNC_WINDOW_*} constants that represents the sync
          *     lookback window.
@@ -1512,11 +1525,13 @@ public abstract class EmailContent {
         @Override
         public ContentValues toContentValues() {
             ContentValues values = new ContentValues();
+            String temp = Integer.toString(mSyncInterval) + "," + Integer.toString(mAccountColor);
+     
             values.put(AccountColumns.DISPLAY_NAME, mDisplayName);
             values.put(AccountColumns.EMAIL_ADDRESS, mEmailAddress);
             values.put(AccountColumns.SYNC_KEY, mSyncKey);
             values.put(AccountColumns.SYNC_LOOKBACK, mSyncLookback);
-            values.put(AccountColumns.SYNC_INTERVAL, mSyncInterval);
+            values.put(AccountColumns.SYNC_INTERVAL, temp);
             values.put(AccountColumns.HOST_AUTH_KEY_RECV, mHostAuthKeyRecv);
             values.put(AccountColumns.HOST_AUTH_KEY_SEND, mHostAuthKeySend);
             values.put(AccountColumns.FLAGS, mFlags);
@@ -1529,7 +1544,6 @@ public abstract class EmailContent {
             values.put(AccountColumns.SECURITY_FLAGS, mSecurityFlags);
             values.put(AccountColumns.SECURITY_SYNC_KEY, mSecuritySyncKey);
             values.put(AccountColumns.SIGNATURE, mSignature);
-            values.put(AccountColumns.ACCOUNT_COLOR, mAccountColor);
             return values;
         }
 
@@ -1559,12 +1573,18 @@ public abstract class EmailContent {
          */
         public void writeToParcel(Parcel dest, int flags) {
             // mBaseUri is not parceled
+           
+            // wrap up sync interval and account color in a string
+            
+            String temp = Integer.toString(mSyncInterval) + "," + Integer.toString(mAccountColor);
+ 
+            
             dest.writeLong(mId);
             dest.writeString(mDisplayName);
             dest.writeString(mEmailAddress);
             dest.writeString(mSyncKey);
             dest.writeInt(mSyncLookback);
-            dest.writeInt(mSyncInterval);
+            dest.writeString(temp);
             dest.writeLong(mHostAuthKeyRecv);
             dest.writeLong(mHostAuthKeySend);
             dest.writeInt(mFlags);
@@ -1577,7 +1597,7 @@ public abstract class EmailContent {
             dest.writeInt(mSecurityFlags);
             dest.writeString(mSecuritySyncKey);
             dest.writeString(mSignature);
-            dest.writeInt(mAccountColor);
+         
 
             if (mHostAuthRecv != null) {
                 dest.writeByte((byte)1);
@@ -1604,7 +1624,13 @@ public abstract class EmailContent {
             mEmailAddress = in.readString();
             mSyncKey = in.readString();
             mSyncLookback = in.readInt();
-            mSyncInterval = in.readInt();
+            String strBundle = in.readString();
+    
+            String[] temp = strBundle.split(",");
+            try {            
+                mSyncInterval = Integer.parseInt(temp[0]);
+                mAccountColor = Integer.parseInt(temp[1]);
+            } catch (Exception e) {}
             mHostAuthKeyRecv = in.readLong();
             mHostAuthKeySend = in.readLong();
             mFlags = in.readInt();
@@ -1617,7 +1643,7 @@ public abstract class EmailContent {
             mSecurityFlags = in.readInt();
             mSecuritySyncKey = in.readString();
             mSignature = in.readString();
-            mAccountColor = in.readInt();
+            
 
             mHostAuthRecv = null;
             if (in.readByte() == 1) {
@@ -1962,6 +1988,7 @@ public abstract class EmailContent {
         public int mFlags;
         public int mVisibleLimit;
         public String mSyncStatus;
+        public int mAccountColor;
 
         public static final int CONTENT_ID_COLUMN = 0;
         public static final int CONTENT_DISPLAY_NAME_COLUMN = 1;
@@ -2083,7 +2110,13 @@ public abstract class EmailContent {
             mDelimiter = cursor.getInt(CONTENT_DELIMITER_COLUMN);
             mSyncKey = cursor.getString(CONTENT_SYNC_KEY_COLUMN);
             mSyncLookback = cursor.getInt(CONTENT_SYNC_LOOKBACK_COLUMN);
-            mSyncInterval = cursor.getInt(CONTENT_SYNC_INTERVAL_COLUMN);
+            String strBundle = cursor.getString(CONTENT_SYNC_INTERVAL_COLUMN);
+        
+            String[] temp = strBundle.split(",");
+            try {            
+                mSyncInterval = Integer.parseInt(temp[0]);
+                mAccountColor = Integer.parseInt(temp[1]);
+            } catch (Exception e) {}
             mSyncTime = cursor.getLong(CONTENT_SYNC_TIME_COLUMN);
             mUnreadCount = cursor.getInt(CONTENT_UNREAD_COUNT_COLUMN);
             mFlagVisible = cursor.getInt(CONTENT_FLAG_VISIBLE_COLUMN) == 1;
@@ -2104,7 +2137,12 @@ public abstract class EmailContent {
             values.put(MailboxColumns.DELIMITER, mDelimiter);
             values.put(MailboxColumns.SYNC_KEY, mSyncKey);
             values.put(MailboxColumns.SYNC_LOOKBACK, mSyncLookback);
-            values.put(MailboxColumns.SYNC_INTERVAL, mSyncInterval);
+            
+            String temp = Integer.toString(mSyncInterval) + "," + Integer.toString(mAccountColor);
+    
+            
+            
+            values.put(MailboxColumns.SYNC_INTERVAL, temp);
             values.put(MailboxColumns.SYNC_TIME, mSyncTime);
             values.put(MailboxColumns.UNREAD_COUNT, mUnreadCount);
             values.put(MailboxColumns.FLAG_VISIBLE, mFlagVisible);

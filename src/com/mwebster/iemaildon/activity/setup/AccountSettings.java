@@ -78,6 +78,7 @@ public class AccountSettings extends PreferenceActivity {
     private long mAccountId = -1;
     private Account mAccount;
     private boolean mAccountDirty;
+    private int mColorInt = -1;
 
     private EditTextPreference mAccountDescription;
     private EditTextPreference mAccountName;
@@ -361,8 +362,9 @@ public class AccountSettings extends PreferenceActivity {
             
             int newcol = refreshedAccount.getAccountColor();
             mColor.setChipColor(newcol);
+ 
             mColor.setSummary("0x" + Integer.toHexString(newcol).toUpperCase());
-            
+            mColorInt = newcol;
             mAccountDirty = false;
         }
     }
@@ -378,6 +380,11 @@ public class AccountSettings extends PreferenceActivity {
         mAccount.setSignature(mAccountSignature.getText());
         newFlags |= mAccountNotify.isChecked() ? Account.FLAGS_NOTIFY_NEW_MAIL : 0;
         newFlags |= mMsgListOnDelete.isChecked() ? Account.FLAGS_MSG_LIST_ON_DELETE : 0;
+        
+        String temp = mCheckFrequency.getValue() + "," + Integer.toString(mColorInt);
+        
+     
+        mAccount.setAccountColor(mColorInt);
         mAccount.setSyncInterval(Integer.parseInt(mCheckFrequency.getValue()));
         if (mSyncWindow != null) {
             mAccount.setSyncLookback(Integer.parseInt(mSyncWindow.getValue()));

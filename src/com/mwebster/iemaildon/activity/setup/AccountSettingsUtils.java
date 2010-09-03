@@ -44,12 +44,13 @@ public class AccountSettingsUtils {
         if (!account.isSaved()) {
             account.save(context);
         } else {
+            String temp = Integer.toString(account.getSyncInterval()) + "," + Integer.toString(account.getAccountColor());
             ContentValues cv = new ContentValues();
             cv.put(AccountColumns.IS_DEFAULT, account.mIsDefault);
             cv.put(AccountColumns.DISPLAY_NAME, account.getDisplayName());
             cv.put(AccountColumns.SENDER_NAME, account.getSenderName());
             cv.put(AccountColumns.SIGNATURE, account.getSignature());
-            cv.put(AccountColumns.SYNC_INTERVAL, account.mSyncInterval);
+            cv.put(AccountColumns.SYNC_INTERVAL, temp);
             cv.put(AccountColumns.RINGTONE_URI, account.mRingtoneUri);
             cv.put(AccountColumns.FLAGS, account.mFlags);
             cv.put(AccountColumns.SYNC_LOOKBACK, account.mSyncLookback);
