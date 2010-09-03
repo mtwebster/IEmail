@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.mwebster.iemaildon.activity.setup;
 
-import com.android.email.AccountBackupRestore;
-import com.android.email.Email;
-import com.android.email.ExchangeUtils;
-import com.android.email.R;
-import com.android.email.mail.Store;
-import com.android.email.mail.store.ExchangeStore;
-import com.android.email.provider.EmailContent;
-import com.android.email.provider.EmailContent.Account;
+import com.mwebster.iemaildon.AccountBackupRestore;
+import com.mwebster.iemaildon.Email;
+import com.mwebster.iemaildon.ExchangeUtils;
+import com.mwebster.iemaildon.R;
+import com.mwebster.iemaildon.mail.Store;
+import com.mwebster.iemaildon.mail.store.ExchangeStore;
+import com.mwebster.iemaildon.provider.EmailContent;
+import com.mwebster.iemaildon.provider.EmailContent.Account;
 
 import android.accounts.AccountManagerCallback;
 import android.accounts.AccountManagerFuture;

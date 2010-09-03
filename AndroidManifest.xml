@@ -16,8 +16,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     
-    android:versionCode="2"
-    android:versionName="1.01"
+    android:versionCode="3"
+    android:versionName="1.15"
     package="com.mwebster.iemaildon">
 	
     <original-package android:name="com.mwebster.iemaildon" />
@@ -87,6 +87,13 @@
             android:label="@string/account_setup_account_type_title"
             >
         </activity>
+        <activity
+            android:name=".activity.setup.AccountSetupColor"
+            android:label="@string/account_setup_account_type_title"
+            >
+        </activity>
+        
+        
         <activity
             android:name=".activity.setup.AccountSetupIncoming"
             android:label="@string/account_setup_incoming_title"
