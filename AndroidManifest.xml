@@ -16,10 +16,10 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     
-    android:versionCode="3"
+    android:versionCode="4"
     android:versionName="1.15"
     package="com.mwebster.iemaildon">
-	
+	<uses-sdk android:minSdkVersion="8" />
     <original-package android:name="com.mwebster.iemaildon" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
