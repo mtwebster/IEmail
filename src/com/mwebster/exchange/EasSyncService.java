@@ -84,7 +84,7 @@ import android.os.SystemClock;
 import android.provider.Calendar.Attendees;
 import android.provider.Calendar.Events;
 import android.text.TextUtils;
-import android.util.Base64;
+import com.mwebster.util.Base64;
 import android.util.Log;
 import android.util.Xml;
 

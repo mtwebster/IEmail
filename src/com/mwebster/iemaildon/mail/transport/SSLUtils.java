@@ -16,7 +16,7 @@
 
 package com.mwebster.iemaildon.mail.transport;
 
-import android.net.SSLCertificateSocketFactory;
+import com.mwebster.util.SSLCertificateSocketFactory;
 
 import javax.net.ssl.SSLSocketFactory;
 

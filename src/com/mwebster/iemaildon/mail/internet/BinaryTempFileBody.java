@@ -21,8 +21,8 @@ import com.mwebster.iemaildon.mail.MessagingException;
 
 import org.apache.commons.io.IOUtils;
 
-import android.util.Base64;
-import android.util.Base64OutputStream;
+import com.mwebster.util.Base64;
+import com.mwebster.util.Base64OutputStream;
 
 import java.io.File;
 import java.io.FileInputStream;

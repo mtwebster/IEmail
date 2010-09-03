@@ -19,7 +19,7 @@ package com.mwebster.iemaildon.mail.internet;
 import com.mwebster.iemaildon.mail.Body;
 import com.mwebster.iemaildon.mail.MessagingException;
 
-import android.util.Base64;
+import com.mwebster.util.Base64;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

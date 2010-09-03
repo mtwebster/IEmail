@@ -35,7 +35,7 @@ import android.os.AsyncTask;
 import android.security.MessageDigest;
 import android.telephony.TelephonyManager;
 import android.text.Editable;
-import android.util.Base64;
+import com.mwebster.util.Base64;
 import android.util.Log;
 import android.widget.TextView;
 

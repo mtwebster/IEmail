@@ -58,7 +58,7 @@ import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
 import android.provider.ContactsContract.CommonDataKinds.Website;
 import android.text.util.Rfc822Token;
 import android.text.util.Rfc822Tokenizer;
-import android.util.Base64;
+import com.mwebster.util.Base64;
 import android.util.Log;
 
 import java.io.IOException;

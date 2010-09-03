@@ -20,6 +20,8 @@
     android:versionName="1.1"
     package="com.mwebster.iemaildon">
 	
+    <uses-sdk android:minSdkVersion="7" />
+
     <original-package android:name="com.mwebster.iemaildon" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>

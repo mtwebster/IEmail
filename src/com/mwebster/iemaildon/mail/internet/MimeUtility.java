@@ -31,8 +31,8 @@ import org.apache.james.mime4j.decoder.QuotedPrintableInputStream;
 import org.apache.james.mime4j.util.CharsetUtil;
 
 import android.util.Log;
-import android.util.Base64;
-import android.util.Base64InputStream;
+import com.mwebster.util.Base64;
+import com.mwebster.util.Base64InputStream;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
