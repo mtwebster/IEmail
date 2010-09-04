@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
+
 package com.mwebster.iemaildon.activity.setup;
 
+import com.mwebster.iemaildon.Controller;
 import com.mwebster.iemaildon.Email;
 import com.mwebster.iemaildon.R;
 import com.mwebster.iemaildon.activity.Welcome;
@@ -401,6 +403,10 @@ public class AccountSettings extends PreferenceActivity {
 
         }
         AccountSettingsUtils.commitSettings(this, mAccount);
+        try {
+            Controller.getInstance(getApplication()).updateMailboxList(
+                    mAccountId, null);
+        } catch (Exception e) { }
         Email.setServicesEnabled(this);
     }
 
