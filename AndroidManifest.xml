@@ -16,12 +16,12 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     
-    android:versionCode="5"
-    android:versionName="1.2"
+
+    android:versionCode="6"
+    android:versionName="1.21"
     package="com.mwebster.iemaildon">
 	<uses-sdk android:minSdkVersion="8" />
     <original-package android:name="com.mwebster.iemaildon" />
-
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
