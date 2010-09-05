@@ -16,8 +16,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     
-    android:versionCode="14"
-    android:versionName="1.65"
+    android:versionCode="15"
+    android:versionName="1.7"
     package="com.mwebster.iemail">
 	
     <original-package android:name="com.mwebster.iemail" />
