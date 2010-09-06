@@ -131,7 +131,7 @@ public class MailboxList extends ListActivity implements OnItemClickListener, On
         setListAdapter(mListAdapter);
 
         ((Button) findViewById(R.id.account_title_button)).setOnClickListener(this);
-
+        ((Button) findViewById(R.id.title_left_text)).setOnClickListener(this);
         mAccountId = getIntent().getLongExtra(EXTRA_ACCOUNT_ID, -1);
 
         lmbTask();
@@ -226,6 +226,9 @@ public class MailboxList extends ListActivity implements OnItemClickListener, On
     public void onClick(View v) {
         switch (v.getId()) {
         case R.id.account_title_button:
+            onAccounts();
+            break;
+        case R.id.title_left_text:
             onAccounts();
             break;
         }
