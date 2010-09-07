@@ -89,11 +89,7 @@
         </activity>
         <activity
             android:name=".activity.setup.AccountSetupColor"
-<<<<<<< HEAD
             android:label="@string/account_setup_color_title"
-=======
-            android:label="@string/account_setup_account_type_title"
->>>>>>> 2a48380... 1.1 don - fixed color stuff for standalone app
             >
         </activity>
         <activity
