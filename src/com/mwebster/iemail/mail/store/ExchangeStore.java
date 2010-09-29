@@ -238,8 +238,14 @@ public class ExchangeStore extends Store {
             boolean tssl = uri.getScheme().contains("+trustallcerts");
             try {
                 int port = ssl ? 443 : 80;
-                int result = ExchangeUtils.getExchangeEmailService(mContext, null)
-                    .validate("eas", mHost, mUsername, mPassword, port, ssl, tssl);
+
+                IEmailService svc = ExchangeUtils.getExchangeEmailService(mContext, null);
+                // Use a longer timeout for the validate command.  Note that the instanceof check
+                // shouldn't be necessary; we'll do it anyway, just to be safe
+                if (svc instanceof EmailServiceProxy) {
+                    ((EmailServiceProxy)svc).setTimeout(90);
+                }
+                int result = svc.validate("eas", mHost, mUsername, mPassword, port, ssl, tssl);
                 if (result != MessagingException.NO_ERROR) {
                     if (result == MessagingException.AUTHENTICATION_FAILED) {
                         throw new AuthenticationFailedException("Authentication failed.");
