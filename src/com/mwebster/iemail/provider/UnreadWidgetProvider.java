@@ -1,9 +1,9 @@
-package com.android.email.provider;
+package com.mwebster.iemail.provider;
 
-import com.android.email.R;
-import com.android.email.activity.Welcome;
-import com.android.email.provider.EmailContent.Mailbox;
-import com.android.email.provider.EmailContent.MailboxColumns;
+import com.mwebster.iemail.R;
+import com.mwebster.iemail.activity.Welcome;
+import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
 
 
 import android.app.PendingIntent;
@@ -23,8 +23,8 @@ public class UnreadWidgetProvider extends AppWidgetProvider {
 
     public static String PREF_PREFIX = "email_unread_widget_";
     public static String UNREAD_WIDGET_UPDATE = "unread_widget_update";
-    static final ComponentName UNREAD_PROVIDER = new ComponentName("com.android.email",
-                "com.android.email.provider.UnreadWidgetProvider");
+    static final ComponentName UNREAD_PROVIDER = new ComponentName("com.mwebster.iemail",
+                "com.mwebster.iemail.provider.UnreadWidgetProvider");
 
     public static AppWidgetManager mAppWidgetManager;
     public static int unreadCount = 0;

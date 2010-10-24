@@ -1,4 +1,4 @@
-package com.android.exchange.utility;
+package com.mwebster.exchange.utility;
 
 /* Portions copied from http://www.javafaq.nu/java-example-code-191.html
  * =============================================================================

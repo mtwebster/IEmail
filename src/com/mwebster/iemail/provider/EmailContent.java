@@ -45,10 +45,10 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.android.email.service.IEmailService;
-import com.android.exchange.SyncManager;
-import com.android.exchange.utility.DesEncrypter;
-import com.android.email.Controller;
+import com.mwebster.iemail.service.IEmailService;
+import com.mwebster.exchange.SyncManager;
+import com.mwebster.exchange.utility.DesEncrypter;
+import com.mwebster.iemail.Controller;
 
 /**
  * EmailContent is the superclass of the various classes of content stored by EmailProvider.

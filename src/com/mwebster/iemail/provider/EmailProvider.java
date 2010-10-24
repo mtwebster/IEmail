@@ -30,6 +30,7 @@ import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
 import com.mwebster.iemail.provider.EmailContent.Message;
 import com.mwebster.iemail.provider.EmailContent.MessageColumns;
 import com.mwebster.iemail.provider.EmailContent.SyncColumns;
+import com.mwebster.iemail.Preferences;
 
 
 import android.accounts.AccountManager;

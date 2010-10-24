@@ -32,6 +32,7 @@ import com.mwebster.iemail.provider.EmailContent.Mailbox;
 import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
 import com.mwebster.iemail.provider.EmailContent.Message;
 import com.mwebster.iemail.provider.EmailContent.MessageColumns;
+import com.mwebster.iemail.provider.EmailContent.HostAuth;
 import com.mwebster.iemail.service.MailService;
 
 

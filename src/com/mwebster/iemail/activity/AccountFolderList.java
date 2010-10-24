@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-<<<<<<< HEAD:src/com/mwebster/iemail/activity/AccountFolderList.java
 package com.mwebster.iemail.activity;
 
 import com.mwebster.iemail.AccountBackupRestore;
@@ -34,6 +33,7 @@ import com.mwebster.iemail.provider.EmailContent.MailboxColumns;
 import com.mwebster.iemail.provider.EmailContent.Message;
 import com.mwebster.iemail.provider.EmailContent.MessageColumns;
 import com.mwebster.iemail.service.MailService;
+import com.mwebster.iemail.Preferences;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
