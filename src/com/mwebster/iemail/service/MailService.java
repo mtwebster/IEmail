@@ -25,6 +25,7 @@ import com.mwebster.iemail.mail.MessagingException;
 import com.mwebster.iemail.provider.EmailContent.Account;
 import com.mwebster.iemail.provider.EmailContent.AccountColumns;
 import com.mwebster.iemail.provider.EmailContent.Mailbox;
+import com.mwebster.iemail.Utility;
 
 import android.app.AlarmManager;
 import android.app.Notification;
@@ -674,14 +675,14 @@ public class MailService extends Service {
             reportString = getResources().getQuantityString(
                     R.plurals.notification_new_one_account_fmt, numNewMessages,
                     numNewMessages, reportName);
-            intent = MessageList.createIntent(this, accountId, mailboxId, -1);
+            intent = MessageList.createIntent(this, accountId, mailboxId, -1, 0);
         } else {
             // Prepare a report for multiple accounts
             // "4 accounts"
             reportString = getResources().getQuantityString(
                     R.plurals.notification_new_multi_account_fmt, accountsWithNewMessages,
                     accountsWithNewMessages);
-             intent = MessageList.createIntent(this, mailboxId, Mailbox.QUERY_ALL_INBOXES, -1);
+             intent = MessageList.createIntent(this, mailboxId, Mailbox.QUERY_ALL_INBOXES, -1, 0);
         }
 
         // prepare appropriate pending intent, set up notification, and send
@@ -713,6 +714,7 @@ public class MailService extends Service {
         NotificationManager notificationManager =
             (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(NOTIFICATION_ID_NEW_MESSAGES, notification);
+        Controller.getInstance(getApplication()).updateWidget();
     }
     
 }
