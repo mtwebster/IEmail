@@ -16,8 +16,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     
-    android:versionCode="16"
-    android:versionName="1.75"
+    android:versionCode="17"
+    android:versionName="2.00"
     package="com.mwebster.iemail">
 	
     <original-package android:name="com.mwebster.iemail" />
@@ -54,7 +54,7 @@
 
     <!-- Grant permission to system apps to access provider (see provider below) -->
     <permission android:name="com.mwebster.iemail.permission.ACCESS_PROVIDER"
-                android:protectionLevel="signatureOrSystem"
+                android:protectionLevel="signature"
                 android:label="@string/permission_access_provider_label"
                 android:description="@string/permission_access_provider_desc"/>
     <uses-permission android:name="com.mwebster.iemail.permission.ACCESS_PROVIDER"/>
@@ -289,7 +289,7 @@
         </receiver>
 
         <service
-            android:name="com.android.email.provider.UnreadWidgetProvider$UpdateWidgetService">
+            android:name="com.mwebster.iemail.provider.UnreadWidgetProvider$UpdateWidgetService">
         </service>
 
         <!--EXCHANGE-REMOVE-SECTION-START-->

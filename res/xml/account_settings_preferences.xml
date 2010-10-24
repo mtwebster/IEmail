@@ -33,7 +33,7 @@
             android:summary=""
             android:dialogTitle="@string/account_settings_name_label" />
 
-        <com.android.email.activity.setup.ColorPreference 
+        <com.mwebster.iemail.activity.setup.ColorPreference 
         	android:order="3"
             android:key="color"
             android:summary=""

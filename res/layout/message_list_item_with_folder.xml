@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.email.activity.MessageListItem
+<com.mwebster.iemail.activity.MessageListItem
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="85dip"
@@ -88,4 +88,4 @@
         android:layout_width="wrap_content"
         android:layout_below="@id/date"
         android:layout_alignParentRight="true" />
-</com.android.email.activity.MessageListItem>
+</com.mwebster.iemail.activity.MessageListItem>
