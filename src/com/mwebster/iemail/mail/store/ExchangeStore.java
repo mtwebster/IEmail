@@ -25,6 +25,9 @@ import com.mwebster.iemail.mail.Store;
 import com.mwebster.iemail.mail.StoreSynchronizer;
 import com.mwebster.iemail.provider.EmailContent.Account;
 import com.mwebster.iemail.service.EasAuthenticatorService;
+import com.mwebster.iemail.service.EmailServiceProxy;
+import com.mwebster.iemail.service.IEmailService;
+import com.mwebster.iemail.service.IEmailServiceCallback;
 
 import android.accounts.AccountManager;
 import android.accounts.AccountManagerCallback;
