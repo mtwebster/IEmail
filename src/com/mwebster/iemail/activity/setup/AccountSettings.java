@@ -109,7 +109,7 @@ public class AccountSettings extends PreferenceActivity {
     private CheckBoxPreference mShowAllMailboxesCombined;
     private CheckBoxPreference mShowOnlyUnreadCombined;
 
-    Preferences mSharedPrefs;
+    SharedPreferences mSharedPrefs;
     /**
      * Display (and edit) settings for a specific account
      */
@@ -124,7 +124,7 @@ public class AccountSettings extends PreferenceActivity {
         super.onCreate(savedInstanceState);
 
         Intent i = getIntent();
-        mSharedPrefs = Preferences.getPreferences(this);
+        mSharedPrefs = getPreferenceManager().getSharedPreferences();
         if (ACTION_ACCOUNT_MANAGER_ENTRY.equals(i.getAction())) {
             // This case occurs if we're changing account settings from Settings -> Accounts
             setAccountIdFromAccountManagerIntent();
