@@ -607,10 +607,14 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
                 if (itemView.mRead) {
                     menu.findItem(R.id.mark_as_read).setTitle(R.string.mark_as_unread_action);
                 }
-                IEmailService sv = mController.getService(mAccountId);
-                if (mMailboxId < -1 || sv == null)
+                Account acc = Account.restoreAccountWithId(mContext, itemView.mAccountId);
+                acc.mHostAuthRecv = HostAuth.restoreHostAuthWithId(this, acc.mHostAuthKeyRecv);
+                if (mMailboxId > 0 && "eas".equals(acc.mHostAuthRecv.mProtocol)) {
+                    menu.findItem(R.id.move).setVisible(true);
+                } else {
                     menu.findItem(R.id.move).setVisible(false);
-                break;
+                }
+            break;
         }
     }
 
@@ -1026,8 +1030,13 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
         } else {
             mFavoriteButton.setText(R.string.remove_star_action);
         }
-        if (mMailboxId < -1)
+        Account acc = Account.restoreAccountWithId(mContext, mAccountId);
+        acc.mHostAuthRecv = HostAuth.restoreHostAuthWithId(this, acc.mHostAuthKeyRecv);
+        if (mMailboxId >= -1 && "eas".equals(acc.mHostAuthRecv.mProtocol)) {
+            mMoveButton.setVisibility(View.VISIBLE);
+        } else {
             mMoveButton.setVisibility(View.GONE);
+        }
     }
 
     private void updateListPosition () {
