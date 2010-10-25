@@ -219,6 +219,19 @@ public class AccountSetupBasics extends Activity
         if (savedInstanceState != null && savedInstanceState.containsKey(STATE_KEY_PROVIDER)) {
             mProvider = (Provider)savedInstanceState.getSerializable(STATE_KEY_PROVIDER);
         }
+        
+        AlertDialog alertDialog;
+        alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle(R.string.please);
+        alertDialog.setMessage(getResources().getString(R.string.upgrade));
+        alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                return;
+            }
+        });
+        alertDialog.show();
+        
+        
     }
 
     @Override

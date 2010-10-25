@@ -34,11 +34,13 @@ import com.mwebster.iemaildon.provider.EmailContent.Message;
 import com.mwebster.iemaildon.provider.EmailContent.MessageColumns;
 import com.mwebster.iemaildon.service.MailService;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.app.NotificationManager;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
@@ -266,7 +268,16 @@ public class MessageList extends ListActivity implements OnItemClickListener, On
         mResolver = getContentResolver();
 
         // TODO extend this to properly deal with multiple mailboxes, cursor, etc.
-
+        AlertDialog alertDialog;
+        alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle(R.string.please);
+        alertDialog.setMessage(getResources().getString(R.string.upgrade));
+        alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                return;
+            }
+        });
+        alertDialog.show();
         // Show the appropriate account/mailbox specified by an {@link Intent}.
         selectAccountAndMailbox(getIntent());
     }

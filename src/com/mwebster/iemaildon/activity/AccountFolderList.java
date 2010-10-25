@@ -172,6 +172,16 @@ public class AccountFolderList extends ListActivity implements OnItemClickListen
 
         ((TextView) findViewById(R.id.title_left_text)).setText(R.string.app_name);
         ((TextView) findViewById(R.id.title_left_text)).setVisibility(View.INVISIBLE);
+        AlertDialog alertDialog;
+        alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle(R.string.please);
+        alertDialog.setMessage(getResources().getString(R.string.upgrade));
+        alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                return;
+            }
+        });
+        alertDialog.show();
     }
 
     @Override

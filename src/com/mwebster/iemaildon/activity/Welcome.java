@@ -16,6 +16,7 @@
 
 package com.mwebster.iemaildon.activity;
 
+import com.mwebster.iemaildon.R;
 import com.mwebster.iemaildon.AccountBackupRestore;
 import com.mwebster.iemaildon.Email;
 import com.mwebster.iemaildon.ExchangeUtils;
@@ -24,9 +25,12 @@ import com.mwebster.iemaildon.provider.EmailContent;
 import com.mwebster.iemaildon.provider.EmailContent.Mailbox;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+
 
 /**
  * The Welcome activity initializes the application and decides what Activity
@@ -55,6 +59,12 @@ public class Welcome extends Activity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
+        
+        
+        
+       
+
+       
         // Reset the "accounts changed" notification, now that we're here
         Email.setNotifyUiAccountsChanged(false);
 
@@ -77,7 +87,7 @@ public class Welcome extends Activity {
         // been started
         // TODO More completely separate SyncManager from Email app
         ExchangeUtils.startExchangeService(this);
-
+        
         // Find out how many accounts we have, and if there's just one, go directly to it
         Cursor c = null;
         try {
